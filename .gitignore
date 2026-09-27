@@ -1,0 +1,6 @@
+node_modules
+dist
+# Capturas originales con datos personales: NUNCA subir al repositorio
+Imagenes recurso/
+dist-archivo
+SIMULADOR DE COMPRAS (abrir con doble clic).html
