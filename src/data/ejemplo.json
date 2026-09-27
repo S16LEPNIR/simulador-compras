@@ -1,0 +1,22 @@
+{
+  "_instrucciones": "Datos claramente FICTICIOS que usa el botón «Rellenar con datos de ejemplo». Puedes cambiarlos, pero no pongas nunca datos reales.",
+  "nombre": "Lucía",
+  "apellido1": "Ejemplo",
+  "apellido2": "Prueba",
+  "nombreCompleto": "Lucía Ejemplo Prueba",
+  "email": "lucia.ejemplo@correo-ficticio.es",
+  "contrasena": "Prueba-Segura-2026!",
+  "telefono": "600 000 000",
+  "calle": "Calle de la Práctica, 12",
+  "piso": "3.º B",
+  "codigoPostal": "46999",
+  "localidad": "Valencia",
+  "provincia": "Valencia",
+  "tipoDocumento": "DNI/NIF",
+  "documento": "00000000T",
+  "tarjetaNumero": "1234 5678 9012 3456",
+  "tarjetaTitular": "LUCIA EJEMPLO PRUEBA",
+  "tarjetaCaducidad": "12/30",
+  "tarjetaCvv": "123",
+  "codigoBanco": "123456"
+}

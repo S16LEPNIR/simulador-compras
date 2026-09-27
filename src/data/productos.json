@@ -1,0 +1,585 @@
+[
+  {
+    "id": "p01",
+    "ref": "TE0001AUR",
+    "categoria": "Electrónica",
+    "marca": "Sonora",
+    "titulo": "Sonora AirWave 5 – Auriculares inalámbricos Bluetooth de diadema con cancelación de ruido, 40 horas de batería, micrófono para llamadas y plegables",
+    "tituloCorto": "Auriculares inalámbricos Bluetooth AirWave 5",
+    "precio": 49.99,
+    "precioAnterior": 69.99,
+    "costeEnvio": 0,
+    "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 14,
+    "imagenes": ["img/productos/p01/1.jpg", "img/productos/p01/2.jpg", "img/productos/p01/3.jpg", "img/productos/p01/4.jpg", "img/productos/p01/5.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Azul noche", "imagen": 0 },
+        { "valor": "Blanco nube", "imagen": 1 },
+        { "valor": "Rojo coral", "imagen": 2 }
+      ] }
+    ],
+    "puntos": [
+      "SONIDO CLARO Y GRAVES EQUILIBRADOS: altavoces de 40 mm pensados para escuchar música, radio o audiolibros con comodidad.",
+      "CANCELACIÓN DE RUIDO: reduce el ruido del autobús, la calle o la cocina con solo pulsar un botón.",
+      "40 HORAS DE BATERÍA: una carga completa dura aproximadamente una semana de uso normal. Carga rápida: 10 minutos = 4 horas.",
+      "LLAMADAS MANOS LIBRES: micrófono integrado para hablar por teléfono o videollamada con la familia.",
+      "CÓMODOS Y LIGEROS: almohadillas acolchadas y diadema ajustable; se pliegan y se guardan en la funda incluida."
+    ],
+    "descripcion": "Los AirWave 5 de Sonora son unos auriculares de diadema sin cables que se conectan al móvil, la tableta o el televisor por Bluetooth. Tienen botones grandes y fáciles de encontrar para subir y bajar el volumen, pausar la música o contestar una llamada. Una voz en español avisa cuando están encendidos, conectados o con poca batería. Incluyen funda rígida, cable de carga USB-C y cable de audio de 3,5 mm para usarlos también con cable.",
+    "caracteristicas": [
+      ["Marca", "Sonora"],
+      ["Modelo", "AirWave 5"],
+      ["Tipo", "De diadema, cerrados"],
+      ["Conectividad", "Bluetooth 5.3 y cable de 3,5 mm"],
+      ["Autonomía", "Hasta 40 horas (30 h con cancelación de ruido)"],
+      ["Tiempo de carga", "2 horas"],
+      ["Micrófono", "Sí, integrado"],
+      ["Peso", "245 gramos"],
+      ["Contenido de la caja", "Auriculares, funda, cable USB-C, cable de audio y manual en español"],
+      ["Garantía", "3 años"]
+    ],
+    "valoracion": 4.4,
+    "numValoraciones": 2317,
+    "distribucion": [64, 20, 8, 3, 5],
+    "resenas": [
+      { "autor": "Mari Carmen G.", "fecha": "2026-08-14", "estrellas": 5, "titulo": "Por fin oigo bien la tele sin molestar", "texto": "Los compré para ver la televisión por la noche sin despertar a mi marido. Se conectaron a la primera siguiendo las instrucciones y se oye muy claro. Son ligeros y no aprietan aunque lleve gafas.", "utiles": 48, "variante": "Azul noche" },
+      { "autor": "Antonio R.", "fecha": "2026-07-02", "estrellas": 5, "titulo": "Muy buena batería", "texto": "Los uso para caminar con la radio y la batería me dura toda la semana. La funda es muy práctica para llevarlos en la mochila.", "utiles": 31, "variante": "Azul noche" },
+      { "autor": "Pilar S.", "fecha": "2026-06-21", "estrellas": 4, "titulo": "Buenos, pero el manual tiene la letra pequeña", "texto": "El sonido es bueno y son cómodos. Le quito una estrella porque el manual trae la letra muy pequeña y me tuvo que ayudar mi nieta a emparejarlos la primera vez.", "utiles": 22, "variante": "Blanco nube" },
+      { "autor": "José Luis M.", "fecha": "2026-05-30", "estrellas": 5, "titulo": "Calidad-precio excelente", "texto": "Tenía unos de marca mucho más caros y estos no tienen nada que envidiarles. La cancelación de ruido en el autobús funciona bien.", "utiles": 19, "variante": "Azul noche" },
+      { "autor": "Encarna P.", "fecha": "2026-05-11", "estrellas": 3, "titulo": "Correctos", "texto": "Cumplen, pero después de un par de horas me da un poco de calor en las orejas. Para ratos cortos están bien.", "utiles": 12, "variante": "Rojo coral" },
+      { "autor": "Francisco J.", "fecha": "2026-04-18", "estrellas": 5, "titulo": "Las llamadas se oyen perfectas", "texto": "Hablo con mis hijos por videollamada y me dicen que me oyen mejor que con el móvil. Muy contento con la compra.", "utiles": 15, "variante": "Azul noche" },
+      { "autor": "Rosa María T.", "fecha": "2026-03-09", "estrellas": 2, "titulo": "Se desconectan a veces", "texto": "Con mi móvil, que es algo antiguo, se desconectan de vez en cuando y tengo que volver a conectarlos. Con la tableta van bien. Escribí al vendedor y me respondieron rápido con unos pasos para solucionarlo.", "utiles": 27, "variante": "Blanco nube" },
+      { "autor": "Manuel A.", "fecha": "2026-02-26", "estrellas": 4, "titulo": "Buenos para el precio", "texto": "El sonido está muy bien. Los botones son grandes y se encuentran al tacto, que para mí es importante. El color rojo es más oscuro que en la foto.", "utiles": 9, "variante": "Rojo coral" },
+      { "autor": "Teresa V.", "fecha": "2026-01-15", "estrellas": 1, "titulo": "Me llegó uno que no cargaba", "texto": "El primero que recibí no cargaba. Lo devolví dentro de los 14 días sin problema y me devolvieron el dinero, pero me quedé sin auriculares. No sé si volveré a pedirlos.", "utiles": 34, "variante": "Azul noche" },
+      { "autor": "Vicente C.", "fecha": "2025-12-03", "estrellas": 5, "titulo": "Regalo acertado", "texto": "Se los regalé a mi mujer por Navidad y los usa todos los días para escuchar audiolibros mientras cose. Muy recomendables.", "utiles": 7, "variante": "Blanco nube" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Se pueden conectar a una televisión que no tiene Bluetooth?", "respuesta": "Sí, con el cable de audio de 3,5 mm que viene en la caja, si la televisión tiene salida de auriculares.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Sirven para personas que llevan gafas?", "respuesta": "Yo llevo gafas y no me molestan, las almohadillas son blandas.", "autor": "Ramón D." },
+      { "pregunta": "¿La voz de aviso está en español?", "respuesta": "Sí, avisa en español cuando se encienden, se conectan o queda poca batería.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p02", "p09", "p06", "p10"]
+  },
+  {
+    "id": "p02",
+    "ref": "TE0002MOV",
+    "categoria": "Electrónica",
+    "marca": "Nexo",
+    "titulo": "Nexo Vision 6 – Teléfono móvil libre de 6,5 pulgadas, 128 GB, 6 GB de RAM, cámara de 50 MP, batería de 5000 mAh, modo sencillo con iconos grandes",
+    "tituloCorto": "Móvil libre Nexo Vision 6 de 6,5\"",
+    "precio": 189.0,
+    "precioAnterior": 229.0,
+    "costeEnvio": 0,
+    "diasEntrega": 2,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 6,
+    "imagenes": ["img/productos/p02/1.jpg", "img/productos/p02/2.jpg", "img/productos/p02/3.jpg", "img/productos/p02/4.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Negro grafito", "imagen": 0 },
+        { "valor": "Azul glaciar", "imagen": 1 }
+      ] },
+      { "nombre": "Capacidad", "opciones": [
+        { "valor": "128 GB + 6 GB RAM", "extra": 0 },
+        { "valor": "256 GB + 8 GB RAM", "extra": 40 }
+      ] }
+    ],
+    "puntos": [
+      "PANTALLA GRANDE DE 6,5\": letras e iconos fáciles de leer. Incluye un «modo sencillo» con botones grandes para llamar, mensajes y cámara.",
+      "BATERÍA PARA TODO EL DÍA: 5000 mAh que duran hasta dos días con un uso moderado.",
+      "CÁMARA DE 50 MP: fotos nítidas de la familia y los viajes, incluso con poca luz.",
+      "MÓVIL LIBRE: funciona con cualquier compañía telefónica. Admite dos tarjetas SIM.",
+      "INCLUYE FUNDA Y PROTECTOR DE PANTALLA colocados de fábrica."
+    ],
+    "descripcion": "El Nexo Vision 6 es un teléfono inteligente pensado para quien quiere un móvil fiable sin complicaciones. Su «modo sencillo» agranda los iconos y deja a mano solo lo importante: teléfono, mensajes, videollamadas, cámara y fotos. También puedes usarlo en modo normal con todas las aplicaciones. Tiene lector de huella en el lateral para desbloquearlo sin recordar números y botón de emergencia configurable.",
+    "caracteristicas": [
+      ["Marca", "Nexo"],
+      ["Modelo", "Vision 6"],
+      ["Pantalla", "6,5 pulgadas, alta definición"],
+      ["Almacenamiento", "128 GB (ampliable con tarjeta microSD)"],
+      ["Memoria RAM", "6 GB"],
+      ["Cámara trasera", "50 MP + 2 MP"],
+      ["Cámara frontal", "8 MP"],
+      ["Batería", "5000 mAh, carga rápida 18 W"],
+      ["Sistema operativo", "Android"],
+      ["Doble SIM", "Sí"],
+      ["Peso", "192 gramos"],
+      ["Garantía", "3 años"]
+    ],
+    "valoracion": 4.2,
+    "numValoraciones": 864,
+    "distribucion": [55, 23, 10, 5, 7],
+    "resenas": [
+      { "autor": "Carmen L.", "fecha": "2026-08-30", "estrellas": 5, "titulo": "Ideal para mi madre de 82 años", "texto": "Activamos el modo sencillo y mi madre ya hace videollamadas sola. La pantalla se ve grande y el sonido de las llamadas es alto.", "utiles": 56, "variante": "Negro grafito" },
+      { "autor": "Joaquín F.", "fecha": "2026-07-19", "estrellas": 4, "titulo": "Buen móvil por lo que cuesta", "texto": "Rápido para WhatsApp, correo y fotos. La cámara de noche no es tan buena como dicen, pero de día hace fotos muy bonitas.", "utiles": 21, "variante": "Azul glaciar" },
+      { "autor": "Amparo B.", "fecha": "2026-07-01", "estrellas": 5, "titulo": "La batería dura muchísimo", "texto": "Lo cargo cada dos días. Viene con funda y protector puestos, así que no tuve que comprar nada más.", "utiles": 18, "variante": "Negro grafito" },
+      { "autor": "Luis E.", "fecha": "2026-06-10", "estrellas": 2, "titulo": "Trae aplicaciones que no uso", "texto": "El móvil va bien, pero viene con varias aplicaciones instaladas que no necesito y me costó quitarlas. Deberían venir limpio.", "utiles": 29, "variante": "Negro grafito" },
+      { "autor": "Dolores N.", "fecha": "2026-05-22", "estrellas": 5, "titulo": "Mi primer móvil táctil", "texto": "Tenía miedo de no saber usarlo, pero con el modo sencillo es muy fácil. Lo estoy aprendiendo a usar en las clases del centro de mayores.", "utiles": 40, "variante": "Azul glaciar" },
+      { "autor": "Rafael O.", "fecha": "2026-04-03", "estrellas": 3, "titulo": "Algo pesado", "texto": "Funciona bien, pero pesa más de lo que esperaba y la funda lo hace más grueso. Para bolsillo pequeño no es.", "utiles": 11, "variante": "Negro grafito" },
+      { "autor": "Isabel K.", "fecha": "2026-03-14", "estrellas": 4, "titulo": "Buena compra", "texto": "Llegó en dos días, bien embalado. La huella del lateral funciona casi siempre a la primera.", "utiles": 8, "variante": "Azul glaciar" },
+      { "autor": "Andrés P.", "fecha": "2026-02-02", "estrellas": 1, "titulo": "Pantalla con un píxel fallado", "texto": "Me llegó con un puntito blanco en la pantalla. Lo cambiaron por otro sin coste, pero tardó una semana en llegar el nuevo.", "utiles": 23, "variante": "Negro grafito" },
+      { "autor": "Gloria H.", "fecha": "2025-12-20", "estrellas": 5, "titulo": "El botón de emergencia me da tranquilidad", "texto": "Vivo sola y configuramos el botón para que avise a mi hija. Muy recomendable para personas mayores.", "utiles": 37, "variante": "Negro grafito" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Funciona con cualquier compañía de teléfono?", "respuesta": "Sí, es un móvil libre. Solo tienes que poner tu tarjeta SIM.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Se puede usar WhatsApp en el modo sencillo?", "respuesta": "Sí, puedes añadir WhatsApp como uno de los botones grandes de la pantalla principal.", "autor": "Emilio S." },
+      { "pregunta": "¿Incluye cargador?", "respuesta": "Incluye cable y cargador de pared de carga rápida.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Tiene radio FM?", "respuesta": "Sí, tiene radio FM, pero necesitas conectar unos auriculares con cable que hacen de antena.", "autor": "Paco V." }
+    ],
+    "relacionados": ["p01", "p09", "p05", "p03"]
+  },
+  {
+    "id": "p03",
+    "ref": "TE0003CAM",
+    "categoria": "Moda",
+    "marca": "Arenal Basics",
+    "titulo": "Arenal Basics – Pack de 2 camisetas de manga corta para hombre, 100 % algodón, cuello redondo, corte regular",
+    "tituloCorto": "Pack de 2 camisetas 100 % algodón",
+    "precio": 19.99,
+    "precioAnterior": null,
+    "costeEnvio": 0,
+    "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 40,
+    "imagenes": ["img/productos/p03/1.jpg", "img/productos/p03/2.jpg", "img/productos/p03/3.jpg", "img/productos/p03/4.jpg", "img/productos/p03/5.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Surtido oscuro", "imagen": 0 },
+        { "valor": "Blanco", "imagen": 3 }
+      ] },
+      { "nombre": "Talla", "opciones": [
+        { "valor": "S" }, { "valor": "M" }, { "valor": "L" }, { "valor": "XL", "agotado": true }, { "valor": "XXL" }
+      ], "guia": true }
+    ],
+    "puntos": [
+      "100 % ALGODÓN: tejido suave y transpirable, agradable para el día a día.",
+      "PACK DE 2 UNIDADES: dos camisetas básicas para combinar con todo.",
+      "CORTE REGULAR: ni ajustada ni holgada. Consulta la guía de tallas antes de comprar.",
+      "LAVADO A MÁQUINA a 30 °C. No necesita planchado si se tiende bien estirada.",
+      "DEVOLUCIÓN GRATUITA si la talla no es la correcta."
+    ],
+    "descripcion": "Camisetas básicas de algodón de 160 g/m², con costuras reforzadas en hombros y cuello que no se deforma después de lavar. Son perfectas para llevar solas en verano o debajo de un jersey en invierno. El pack incluye dos camisetas del color elegido.",
+    "caracteristicas": [
+      ["Marca", "Arenal Basics"],
+      ["Composición", "100 % algodón"],
+      ["Gramaje", "160 g/m²"],
+      ["Cuello", "Redondo"],
+      ["Manga", "Corta"],
+      ["Corte", "Regular"],
+      ["Cuidados", "Lavado a máquina 30 °C, no usar lejía"],
+      ["Unidades", "2"]
+    ],
+    "valoracion": 4.3,
+    "numValoraciones": 5402,
+    "distribucion": [58, 24, 10, 4, 4],
+    "resenas": [
+      { "autor": "Jesús A.", "fecha": "2026-09-01", "estrellas": 5, "titulo": "Buenas y baratas", "texto": "Algodón de buena calidad. Pedí mi talla de siempre (L) y me quedan perfectas.", "utiles": 25, "variante": "Surtido oscuro, L" },
+      { "autor": "Mercedes Q.", "fecha": "2026-08-08", "estrellas": 4, "titulo": "Para mi marido", "texto": "Le quedan bien, aunque encogen un poco tras el primer lavado. Recomiendo pedir una talla más si estáis entre dos.", "utiles": 42, "variante": "Blanco, XL" },
+      { "autor": "Ricardo U.", "fecha": "2026-07-25", "estrellas": 5, "titulo": "Repetiré", "texto": "Es el tercer pack que compro. Aguantan muchos lavados sin deformarse.", "utiles": 14, "variante": "Surtido oscuro, M" },
+      { "autor": "Concha E.", "fecha": "2026-07-03", "estrellas": 2, "titulo": "Transparentan las blancas", "texto": "Las blancas son bastante finas y transparentan. Las oscuras están mejor.", "utiles": 30, "variante": "Blanco, M" },
+      { "autor": "Alberto Z.", "fecha": "2026-06-12", "estrellas": 5, "titulo": "Muy cómodas", "texto": "Suaves y frescas para el verano. El cuello no aprieta.", "utiles": 6, "variante": "Surtido oscuro, XXL" },
+      { "autor": "Remedios F.", "fecha": "2026-05-06", "estrellas": 3, "titulo": "Normales", "texto": "Están bien por el precio, sin más. El color azul marino es más apagado que en la foto.", "utiles": 9, "variante": "Surtido oscuro, L" },
+      { "autor": "Ginés T.", "fecha": "2026-04-17", "estrellas": 4, "titulo": "Buen básico", "texto": "Buena relación calidad-precio. Me cambiaron la talla gratis sin problema.", "utiles": 11, "variante": "Surtido oscuro, XL" },
+      { "autor": "Fina R.", "fecha": "2026-03-01", "estrellas": 1, "titulo": "Una tenía una costura suelta", "texto": "Una de las dos camisetas venía con una costura descosida en el costado. Pedí la devolución y fue fácil, pero es una pena.", "utiles": 17, "variante": "Blanco, L" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Las tallas son las normales españolas?", "respuesta": "Sí. La L equivale a una talla 50 aproximadamente. Consulta la guía de tallas de la ficha.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Encogen al lavarlas?", "respuesta": "Un poquito en largo si se lavan con agua caliente. A 30 °C apenas encogen.", "autor": "Tomás G." }
+    ],
+    "relacionados": ["p07", "p10", "p01", "p06"]
+  },
+  {
+    "id": "p04",
+    "ref": "TE0004FRE",
+    "categoria": "Hogar y cocina",
+    "marca": "Cocinova",
+    "titulo": "Cocinova AirChef 5L – Freidora de aire sin aceite de 5 litros, 1500 W, 8 programas, temporizador y cesta antiadherente apta para lavavajillas",
+    "tituloCorto": "Freidora de aire sin aceite AirChef 5 L",
+    "precio": 69.9,
+    "precioAnterior": 89.9,
+    "costeEnvio": 4.99,
+    "diasEntrega": 3,
+    "vendedor": { "nombre": "Hogar y Cocina Mediterráneo S.L.", "externo": true },
+    "stock": 9,
+    "imagenes": ["img/productos/p04/1.jpg", "img/productos/p04/2.jpg", "img/productos/p04/3.jpg", "img/productos/p04/4.jpg"],
+    "variantes": [],
+    "puntos": [
+      "COCINA CON HASTA UN 85 % MENOS DE ACEITE: patatas, pescado, verduras o pollo crujientes con una cucharada de aceite.",
+      "5 LITROS DE CAPACIDAD: suficiente para 3 o 4 personas.",
+      "8 PROGRAMAS AUTOMÁTICOS con un solo botón: patatas, carne, pescado, pollo, verduras, repostería, recalentar y descongelar.",
+      "SEGURA: se apaga sola al terminar y al sacar la cesta. Asa que no se calienta.",
+      "FÁCIL DE LIMPIAR: cesta antiadherente apta para lavavajillas. Incluye recetario en español."
+    ],
+    "descripcion": "La AirChef 5L cocina con aire caliente, sin necesidad de sumergir los alimentos en aceite, por lo que la cocina no huele a fritura. Su mando giratorio y sus botones grandes con dibujos hacen que sea muy fácil de usar. Este producto lo vende y lo envía un vendedor externo, Hogar y Cocina Mediterráneo S.L., y tiene gastos de envío.",
+    "caracteristicas": [
+      ["Marca", "Cocinova"],
+      ["Modelo", "AirChef 5L"],
+      ["Capacidad", "5 litros"],
+      ["Potencia", "1500 W"],
+      ["Temperatura", "De 80 °C a 200 °C"],
+      ["Temporizador", "Hasta 60 minutos con aviso sonoro"],
+      ["Programas", "8"],
+      ["Dimensiones", "30 x 27 x 32 cm"],
+      ["Peso", "4,2 kg"],
+      ["Garantía", "2 años (gestionada por el vendedor)"]
+    ],
+    "valoracion": 4.1,
+    "numValoraciones": 1288,
+    "distribucion": [52, 22, 11, 6, 9],
+    "resenas": [
+      { "autor": "Paquita M.", "fecha": "2026-09-05", "estrellas": 5, "titulo": "Ya no frío con aceite", "texto": "Las patatas quedan crujientes y la cocina no huele. El recetario viene en español y con fotos.", "utiles": 38 },
+      { "autor": "Eduardo S.", "fecha": "2026-08-20", "estrellas": 4, "titulo": "Buena, pero hace algo de ruido", "texto": "Cocina muy bien y rápido. Hace un ruido parecido al de un secador de pelo, nada exagerado.", "utiles": 12 },
+      { "autor": "Lola C.", "fecha": "2026-08-01", "estrellas": 1, "titulo": "Ojo con los gastos de envío", "texto": "La freidora está bien, pero no me fijé en que la vendía otra empresa y me cobraron 4,99 € de envío. Además tardó cuatro días. Revisad bien quién vende antes de comprar.", "utiles": 64 },
+      { "autor": "Salvador N.", "fecha": "2026-07-16", "estrellas": 5, "titulo": "Muy práctica para dos personas", "texto": "Hacemos pescado, verduras y hasta bizcocho. La cesta se limpia en un momento.", "utiles": 17 },
+      { "autor": "Inmaculada D.", "fecha": "2026-06-29", "estrellas": 3, "titulo": "Más grande de lo que pensaba", "texto": "Ocupa bastante sitio en la encimera. Mirad las medidas antes de comprarla.", "utiles": 21 },
+      { "autor": "Miguel Á. L.", "fecha": "2026-05-15", "estrellas": 5, "titulo": "Muy fácil de usar", "texto": "Con el mando y los dibujitos no hace falta leer el manual. A mi padre de 85 años le encanta.", "utiles": 26 },
+      { "autor": "Ángeles V.", "fecha": "2026-04-10", "estrellas": 2, "titulo": "La cesta se raya", "texto": "A los tres meses la cesta empezó a perder el antiadherente. El vendedor tardó en contestar.", "utiles": 19 },
+      { "autor": "Tomás B.", "fecha": "2026-03-22", "estrellas": 4, "titulo": "Buena compra", "texto": "Funciona como se espera. Lo único, el primer uso huele un poco a plástico, luego se quita.", "utiles": 8 },
+      { "autor": "Julia W.", "fecha": "2026-02-11", "estrellas": 5, "titulo": "La recomiendo", "texto": "Se apaga sola al terminar, eso me da mucha tranquilidad.", "utiles": 10 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Quién gestiona la garantía si se estropea?", "respuesta": "La garantía la gestiona el vendedor, Hogar y Cocina Mediterráneo S.L. Puedes contactar con él desde tus pedidos.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Se puede meter la cesta en el lavavajillas?", "respuesta": "Sí, la cesta y la bandeja son aptas para lavavajillas.", "autor": "Nieves P." },
+      { "pregunta": "¿Cabe un pollo entero?", "respuesta": "Un pollo pequeño de hasta 1,2 kg sí cabe.", "autor": "Julián R." }
+    ],
+    "relacionados": ["p05", "p08", "p10", "p09"]
+  },
+  {
+    "id": "p05",
+    "ref": "TE0005CAF",
+    "categoria": "Hogar y cocina",
+    "marca": "Cafelia",
+    "titulo": "Cafelia Mini – Cafetera de cápsulas compatible con cápsulas universales, 19 bares, depósito de 0,8 L, apagado automático, color negro",
+    "tituloCorto": "Cafetera de cápsulas Cafelia Mini",
+    "precio": 54.99,
+    "precioAnterior": null,
+    "costeEnvio": 0,
+    "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 22,
+    "imagenes": ["img/productos/p05/1.jpg", "img/productos/p05/2.jpg", "img/productos/p05/3.jpg", "img/productos/p05/4.jpg"],
+    "variantes": [],
+    "puntos": [
+      "CAFÉ EN UN MINUTO: introduce la cápsula, pulsa el botón y listo.",
+      "DOS BOTONES GRANDES: café corto o café largo, sin menús complicados.",
+      "APAGADO AUTOMÁTICO a los 9 minutos sin uso para ahorrar energía y evitar olvidos.",
+      "COMPACTA: solo 12 cm de ancho, cabe en cualquier cocina.",
+      "INCLUYE 12 CÁPSULAS DE REGALO de distintas intensidades."
+    ],
+    "descripcion": "La Cafelia Mini es una cafetera de cápsulas pequeña y sencilla. Calienta en 25 segundos y prepara café espresso o largo con solo pulsar un botón. El depósito de agua se quita para rellenarlo en el grifo y la bandeja se ajusta a tazas altas. Las cápsulas usadas caen a un contenedor interior con capacidad para 8 unidades.",
+    "caracteristicas": [
+      ["Marca", "Cafelia"],
+      ["Modelo", "Mini"],
+      ["Tipo", "Cafetera de cápsulas"],
+      ["Presión", "19 bares"],
+      ["Depósito", "0,8 litros, extraíble"],
+      ["Potencia", "1260 W"],
+      ["Apagado automático", "Sí, a los 9 minutos"],
+      ["Dimensiones", "12 x 33 x 24 cm"],
+      ["Garantía", "3 años"]
+    ],
+    "valoracion": 4.5,
+    "numValoraciones": 3120,
+    "distribucion": [68, 19, 7, 3, 3],
+    "resenas": [
+      { "autor": "Manolo H.", "fecha": "2026-09-10", "estrellas": 5, "titulo": "Sencilla y buena", "texto": "Dos botones y ya está. El café sale caliente y con buena crema.", "utiles": 29 },
+      { "autor": "Asunción L.", "fecha": "2026-08-18", "estrellas": 5, "titulo": "Perfecta para una persona", "texto": "Vivo sola y no quería tirar café. Con esta me hago uno cuando me apetece. Muy pequeña.", "utiles": 21 },
+      { "autor": "Germán O.", "fecha": "2026-07-28", "estrellas": 4, "titulo": "Muy bien, pero el depósito es pequeño", "texto": "Hay que rellenar el agua cada 5 o 6 cafés. Por lo demás, estupenda.", "utiles": 16 },
+      { "autor": "Elvira J.", "fecha": "2026-07-04", "estrellas": 5, "titulo": "Regalo para mis padres", "texto": "Mis padres de 80 años la usan sin problema. Les pegué una pegatina en el botón del café largo y listo.", "utiles": 33 },
+      { "autor": "Samuel C.", "fecha": "2026-06-15", "estrellas": 3, "titulo": "No todas las cápsulas funcionan igual", "texto": "Con las cápsulas de algunas marcas de supermercado el café sale más aguado. Con las que incluye va bien.", "utiles": 24 },
+      { "autor": "Nuria A.", "fecha": "2026-05-02", "estrellas": 5, "titulo": "Silenciosa", "texto": "Hace muy poco ruido, puedo hacerme el café por la mañana sin despertar a nadie.", "utiles": 7 },
+      { "autor": "Benito E.", "fecha": "2026-03-19", "estrellas": 1, "titulo": "Dejó de funcionar a los 5 meses", "texto": "Un día dejó de calentar. La garantía me la cambiaron por otra, pero tuve que enviarla y esperar dos semanas.", "utiles": 20 },
+      { "autor": "Lourdes S.", "fecha": "2026-02-07", "estrellas": 5, "titulo": "La mejor compra del año", "texto": "Muy fácil de limpiar y el café está riquísimo.", "utiles": 5 },
+      { "autor": "Ramiro G.", "fecha": "2025-11-25", "estrellas": 4, "titulo": "Buena relación calidad-precio", "texto": "Cumple de sobra. La bandeja para tazas altas es un acierto.", "utiles": 4 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Qué cápsulas admite?", "respuesta": "Admite cápsulas del formato universal más común que se vende en supermercados.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Se puede hacer leche caliente?", "respuesta": "No, esta cafetera no tiene vaporizador de leche.", "autor": "Carlos M." }
+    ],
+    "relacionados": ["p04", "p08", "p06", "p10"]
+  },
+  {
+    "id": "p06",
+    "ref": "TE0006LIB",
+    "categoria": "Libros",
+    "marca": "Editorial Brisa",
+    "titulo": "La casa de los almendros (Tapa blanda, letra grande) – Elena Marín Soler",
+    "tituloCorto": "La casa de los almendros (letra grande)",
+    "precio": 9.95,
+    "precioAnterior": null,
+    "costeEnvio": 0,
+    "diasEntrega": 2,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 35,
+    "imagenes": ["img/productos/p06/1.jpg", "img/productos/p06/2.jpg", "img/productos/p06/3.jpg", "img/productos/p06/4.jpg"],
+    "variantes": [
+      { "nombre": "Formato", "opciones": [
+        { "valor": "Tapa blanda, letra grande", "extra": 0 },
+        { "valor": "Tapa dura", "extra": 8 }
+      ] }
+    ],
+    "puntos": [
+      "EDICIÓN EN LETRA GRANDE: cuerpo de letra de 16 puntos, cómoda para leer sin forzar la vista.",
+      "Una historia familiar entre Valencia y la sierra de Alicante, a lo largo de tres generaciones.",
+      "368 páginas. Papel mate que no refleja la luz.",
+      "Ideal para clubes de lectura: incluye guía de preguntas al final del libro."
+    ],
+    "descripcion": "Cuando Aurora hereda la vieja casa de campo de su abuela, rodeada de almendros, descubre un baúl lleno de cartas que nadie había leído. A través de ellas conocerá los secretos de una familia marcada por la guerra, la emigración y un amor que esperó cuarenta años. Una novela emotiva sobre la memoria, las raíces y las segundas oportunidades. (Obra y autora ficticias creadas para este simulador).",
+    "caracteristicas": [
+      ["Autora", "Elena Marín Soler"],
+      ["Editorial", "Editorial Brisa"],
+      ["Idioma", "Español"],
+      ["Formato", "Tapa blanda, letra grande"],
+      ["Páginas", "368"],
+      ["Dimensiones", "15 x 23 cm"],
+      ["Fecha de publicación", "Marzo de 2026"]
+    ],
+    "valoracion": 4.7,
+    "numValoraciones": 689,
+    "distribucion": [78, 15, 4, 1, 2],
+    "resenas": [
+      { "autor": "Carmina R.", "fecha": "2026-08-27", "estrellas": 5, "titulo": "Me hizo llorar", "texto": "Precioso. Me recordó a la casa del pueblo de mis abuelos. La letra grande se agradece muchísimo.", "utiles": 44, "variante": "Tapa blanda, letra grande" },
+      { "autor": "Club de lectura Benimaclet", "fecha": "2026-07-30", "estrellas": 5, "titulo": "Perfecto para comentar en grupo", "texto": "Lo leímos en nuestro club y dio para dos sesiones. La guía de preguntas del final es muy útil.", "utiles": 36, "variante": "Tapa blanda, letra grande" },
+      { "autor": "Federico I.", "fecha": "2026-07-11", "estrellas": 4, "titulo": "Bonita historia", "texto": "Engancha desde el principio. El final me pareció algo precipitado, pero la recomiendo.", "utiles": 13, "variante": "Tapa dura" },
+      { "autor": "Marisa O.", "fecha": "2026-06-05", "estrellas": 5, "titulo": "Por fin letra grande", "texto": "Con la edición de letra grande leo sin gafas de cerca. Ojalá hubiera más libros así.", "utiles": 29, "variante": "Tapa blanda, letra grande" },
+      { "autor": "Joan C.", "fecha": "2026-05-09", "estrellas": 3, "titulo": "Entretenida", "texto": "Se lee bien, pero al principio hay muchos personajes y cuesta seguirlos.", "utiles": 10, "variante": "Tapa blanda, letra grande" },
+      { "autor": "Adela P.", "fecha": "2026-04-21", "estrellas": 5, "titulo": "Un regalo perfecto", "texto": "Se lo regalé a mi hermana y ahora nos lo vamos pasando entre las amigas.", "utiles": 8, "variante": "Tapa dura" },
+      { "autor": "Hilario T.", "fecha": "2026-03-16", "estrellas": 2, "titulo": "Llegó con una esquina doblada", "texto": "La novela está bien, pero el libro llegó con la tapa doblada porque venía en un sobre sin protección.", "utiles": 15, "variante": "Tapa blanda, letra grande" },
+      { "autor": "Susana M.", "fecha": "2026-03-02", "estrellas": 5, "titulo": "Maravillosa", "texto": "De esas novelas que no quieres que se acaben.", "utiles": 6, "variante": "Tapa blanda, letra grande" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿De qué tamaño es la letra?", "respuesta": "La edición de letra grande usa letra de 16 puntos, bastante más grande que un libro normal.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Existe en libro electrónico?", "respuesta": "Por ahora solo está disponible en papel.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p10", "p05", "p01", "p08"]
+  },
+  {
+    "id": "p07",
+    "ref": "TE0007ZAP",
+    "categoria": "Deportes",
+    "marca": "Pasoleve",
+    "titulo": "Pasoleve Walk Comfort – Zapatillas para caminar unisex, suela amortiguada antideslizante, plantilla extraíble y cierre de cordones elásticos",
+    "tituloCorto": "Zapatillas para caminar Walk Comfort",
+    "precio": 44.95,
+    "precioAnterior": 59.95,
+    "costeEnvio": 3.99,
+    "diasEntrega": 3,
+    "vendedor": { "nombre": "Deportes Turia S.L.", "externo": true },
+    "stock": 18,
+    "imagenes": ["img/productos/p07/1.jpg", "img/productos/p07/2.jpg", "img/productos/p07/3.jpg", "img/productos/p07/4.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Blanco", "imagen": 0 },
+        { "valor": "Rosa empolvado", "imagen": 1 },
+        { "valor": "Negro", "imagen": 2 }
+      ] },
+      { "nombre": "Talla", "opciones": [
+        { "valor": "37" }, { "valor": "38" }, { "valor": "39" }, { "valor": "40" }, { "valor": "41" }, { "valor": "42" }, { "valor": "43", "agotado": true }, { "valor": "44" }, { "valor": "45" }
+      ], "guia": true }
+    ],
+    "puntos": [
+      "AMORTIGUACIÓN EXTRA en el talón para caminar largas distancias sin cansarse.",
+      "SUELA ANTIDESLIZANTE de goma, segura sobre suelos mojados.",
+      "CORDONES ELÁSTICOS: se calzan sin atarse, ideales si cuesta agacharse.",
+      "PLANTILLA EXTRAÍBLE: permite usar plantillas ortopédicas.",
+      "LIGERAS: solo 260 gramos por zapatilla."
+    ],
+    "descripcion": "Las Walk Comfort de Pasoleve están diseñadas para pasear a diario. Tienen una horma ancha que no aprieta los dedos, un contrafuerte que sujeta bien el talón y un tejido transpirable que evita el calor. Este producto lo vende y lo envía Deportes Turia S.L., un vendedor externo, con gastos de envío de 3,99 €.",
+    "caracteristicas": [
+      ["Marca", "Pasoleve"],
+      ["Modelo", "Walk Comfort"],
+      ["Uso", "Caminar y uso diario"],
+      ["Material exterior", "Tejido de malla transpirable"],
+      ["Suela", "Goma antideslizante"],
+      ["Cierre", "Cordones elásticos"],
+      ["Horma", "Ancha"],
+      ["Peso", "260 g por zapatilla (talla 40)"]
+    ],
+    "valoracion": 4.0,
+    "numValoraciones": 954,
+    "distribucion": [49, 24, 12, 7, 8],
+    "resenas": [
+      { "autor": "Encarnación S.", "fecha": "2026-09-08", "estrellas": 5, "titulo": "Como caminar sobre nubes", "texto": "Camino una hora cada mañana y no me duelen los pies. Los cordones elásticos son una maravilla.", "utiles": 41, "variante": "Rosa empolvado, 38" },
+      { "autor": "Ernesto V.", "fecha": "2026-08-22", "estrellas": 4, "titulo": "Cómodas, tallan algo grande", "texto": "Muy cómodas, pero tallan medio número grande. Yo uso un 43 y me quedaron bien en 42.", "utiles": 52, "variante": "Negro, 42" },
+      { "autor": "Carmen M.", "fecha": "2026-08-02", "estrellas": 2, "titulo": "Tardaron en llegar", "texto": "Las vendía otra empresa y tardaron cinco días. Además pagué envío. Las zapatillas están bien.", "utiles": 18, "variante": "Blanco, 39" },
+      { "autor": "Agustín R.", "fecha": "2026-07-14", "estrellas": 5, "titulo": "Buenas para la plantilla ortopédica", "texto": "Saqué la plantilla y puse la mía sin problema. Muy ligeras.", "utiles": 22, "variante": "Negro, 44" },
+      { "autor": "Visitación L.", "fecha": "2026-06-24", "estrellas": 3, "titulo": "Se ensucian mucho", "texto": "Las blancas se ensucian enseguida. Comodidad buena.", "utiles": 9, "variante": "Blanco, 37" },
+      { "autor": "Pedro N.", "fecha": "2026-05-19", "estrellas": 1, "titulo": "Se despegó la suela", "texto": "A los dos meses se despegó la suela de la punta. El vendedor me pidió fotos y todavía estoy esperando respuesta.", "utiles": 27, "variante": "Negro, 41" },
+      { "autor": "Milagros A.", "fecha": "2026-04-28", "estrellas": 5, "titulo": "Muy seguras", "texto": "No resbalan nada, ni con el suelo mojado del mercado.", "utiles": 15, "variante": "Rosa empolvado, 39" },
+      { "autor": "Roberto K.", "fecha": "2026-03-30", "estrellas": 4, "titulo": "Buena compra", "texto": "Relación calidad-precio correcta. Transpiran bien en verano.", "utiles": 6, "variante": "Blanco, 42" },
+      { "autor": "Josefa D.", "fecha": "2026-02-15", "estrellas": 5, "titulo": "Para mis juanetes", "texto": "La horma ancha no me roza los juanetes. Me he comprado otro par.", "utiles": 33, "variante": "Negro, 38" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Tallan normal?", "respuesta": "Varios clientes comentan que tallan medio número grande. Consulta la guía de tallas.", "autor": "Respuesta del vendedor (Deportes Turia S.L.)" },
+      { "pregunta": "¿Se pueden lavar en la lavadora?", "respuesta": "Se recomienda lavarlas a mano con agua y jabón neutro.", "autor": "Respuesta del vendedor (Deportes Turia S.L.)" }
+    ],
+    "relacionados": ["p03", "p09", "p01", "p10"]
+  },
+  {
+    "id": "p08",
+    "ref": "TE0008ACE",
+    "categoria": "Alimentación",
+    "marca": "Olivar de Mencía",
+    "titulo": "Olivar de Mencía – Aceite de oliva virgen extra, variedad picual, cosecha temprana, pack de 3 botellas de 1 litro",
+    "tituloCorto": "Aceite de oliva virgen extra, pack 3 x 1 L",
+    "precio": 32.85,
+    "precioAnterior": 36.9,
+    "costeEnvio": 0,
+    "diasEntrega": 2,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 50,
+    "imagenes": ["img/productos/p08/1.jpg", "img/productos/p08/2.jpg", "img/productos/p08/3.jpg", "img/productos/p08/4.jpg"],
+    "variantes": [],
+    "unidad": "10,95 € / litro",
+    "puntos": [
+      "ACEITE DE OLIVA VIRGEN EXTRA de primera prensada en frío, de aceituna picual.",
+      "COSECHA TEMPRANA: sabor afrutado con un ligero picor en boca.",
+      "PACK AHORRO de 3 botellas de cristal de 1 litro con tapón antigoteo.",
+      "PRODUCTO DE ESPAÑA, envasado en origen por la cooperativa.",
+      "Ideal para tostadas, ensaladas y para cocinar."
+    ],
+    "descripcion": "Aceite de oliva virgen extra elaborado con aceitunas recogidas a principios de otoño y molidas en menos de 6 horas. Tiene color verde intenso, aroma a hierba recién cortada y un sabor equilibrado. Se envía en caja de cartón reforzada para que las botellas lleguen en perfecto estado.",
+    "caracteristicas": [
+      ["Marca", "Olivar de Mencía"],
+      ["Tipo", "Aceite de oliva virgen extra"],
+      ["Variedad", "Picual"],
+      ["Contenido", "3 botellas de 1 litro"],
+      ["Envase", "Cristal"],
+      ["Origen", "España"],
+      ["Consumir preferentemente antes de", "18 meses desde el envasado"],
+      ["Conservación", "En lugar fresco y protegido de la luz"]
+    ],
+    "valoracion": 4.6,
+    "numValoraciones": 1540,
+    "distribucion": [74, 16, 5, 2, 3],
+    "resenas": [
+      { "autor": "Conchita B.", "fecha": "2026-09-12", "estrellas": 5, "titulo": "Sabe como el del pueblo", "texto": "Afrutado y con un poquito de picor. En las tostadas está buenísimo.", "utiles": 27 },
+      { "autor": "Enrique Z.", "fecha": "2026-08-15", "estrellas": 5, "titulo": "Llegó perfecto", "texto": "Venía muy bien embalado, ninguna botella rota. Buen precio por litro.", "utiles": 19 },
+      { "autor": "Rosario F.", "fecha": "2026-07-20", "estrellas": 4, "titulo": "Bueno, pero pica un poco", "texto": "Es buen aceite, pero para mi gusto pica demasiado. A mi marido le encanta.", "utiles": 12 },
+      { "autor": "Luis Miguel P.", "fecha": "2026-06-18", "estrellas": 1, "titulo": "Una botella rota", "texto": "Llegó una botella rota y la caja empapada. Me devolvieron el importe de esa botella tras enviar una foto.", "utiles": 31 },
+      { "autor": "Maribel Y.", "fecha": "2026-05-27", "estrellas": 5, "titulo": "Repito cada trimestre", "texto": "Ya es el cuarto pack que compro. Calidad constante.", "utiles": 9 },
+      { "autor": "Jaime O.", "fecha": "2026-04-08", "estrellas": 5, "titulo": "Muy buen aceite", "texto": "Color verde precioso y aroma intenso. Muy recomendable.", "utiles": 7 },
+      { "autor": "Lucía H.", "fecha": "2026-03-11", "estrellas": 3, "titulo": "Más caro que en el súper en oferta", "texto": "Es bueno, pero en ofertas del supermercado lo he visto más barato. Compara antes de comprar.", "utiles": 24 },
+      { "autor": "Esteban G.", "fecha": "2026-02-01", "estrellas": 5, "titulo": "Excelente", "texto": "El tapón antigoteo funciona de verdad.", "utiles": 5 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Las botellas son de cristal o plástico?", "respuesta": "Son de cristal oscuro para proteger el aceite de la luz.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Se puede comprar una sola botella?", "respuesta": "En esta ficha solo se vende el pack de 3.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p04", "p05", "p06", "p09"]
+  },
+  {
+    "id": "p09",
+    "ref": "TE0009TEN",
+    "categoria": "Salud",
+    "marca": "Vitalmed",
+    "titulo": "Vitalmed BP-300 – Tensiómetro digital de brazo con pantalla grande, detección de pulso irregular, memoria para 2 usuarios y manguito de 22-42 cm",
+    "tituloCorto": "Tensiómetro digital de brazo BP-300",
+    "precio": 34.99,
+    "precioAnterior": 42.99,
+    "costeEnvio": 0,
+    "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false },
+    "stock": 12,
+    "imagenes": ["img/productos/p09/1.jpg", "img/productos/p09/2.jpg", "img/productos/p09/3.jpg", "img/productos/p09/4.jpg"],
+    "variantes": [],
+    "puntos": [
+      "PANTALLA GRANDE con números de 3 cm y luz, fáciles de leer sin gafas.",
+      "UN SOLO BOTÓN: se coloca el manguito, se pulsa y en 30 segundos muestra la tensión y el pulso.",
+      "AVISO DE PULSO IRREGULAR y escala de colores (verde, amarillo, rojo) para interpretar el resultado.",
+      "MEMORIA PARA 2 PERSONAS con 60 mediciones cada una, con fecha y hora.",
+      "VALIDADO CLÍNICAMENTE. Incluye estuche y pilas."
+    ],
+    "descripcion": "El BP-300 mide la tensión arterial y el pulso en el brazo de forma automática. Es muy útil para llevar un control en casa y enseñárselo al médico. Recuerda que un tensiómetro no sustituye la consulta médica: si los valores son altos o tienes dudas, consulta con tu centro de salud.",
+    "caracteristicas": [
+      ["Marca", "Vitalmed"],
+      ["Modelo", "BP-300"],
+      ["Tipo", "Tensiómetro digital de brazo"],
+      ["Manguito", "22 - 42 cm"],
+      ["Memoria", "2 usuarios x 60 mediciones"],
+      ["Alimentación", "4 pilas AA (incluidas) o cable USB"],
+      ["Pantalla", "LCD retroiluminada de 7 cm"],
+      ["Garantía", "3 años"]
+    ],
+    "valoracion": 4.5,
+    "numValoraciones": 4210,
+    "distribucion": [69, 18, 6, 3, 4],
+    "resenas": [
+      { "autor": "Bernardo C.", "fecha": "2026-09-14", "estrellas": 5, "titulo": "Lo comparé con el del centro de salud", "texto": "Da los mismos valores que el de mi enfermera. Los números se ven enormes.", "utiles": 58 },
+      { "autor": "Purificación E.", "fecha": "2026-08-25", "estrellas": 5, "titulo": "Muy fácil", "texto": "Un botón y ya está. Lo usamos mi marido y yo, cada uno con su memoria.", "utiles": 34 },
+      { "autor": "Arturo L.", "fecha": "2026-07-27", "estrellas": 4, "titulo": "Bueno, pero el manguito aprieta", "texto": "Al inflarse aprieta bastante, pero es normal en estos aparatos. Mide bien.", "utiles": 14 },
+      { "autor": "Fernanda R.", "fecha": "2026-07-06", "estrellas": 5, "titulo": "Me avisó de una arritmia", "texto": "Me salió el aviso de pulso irregular varias veces, fui al médico y efectivamente tenía una arritmia. Muy agradecida.", "utiles": 71 },
+      { "autor": "Camilo S.", "fecha": "2026-06-09", "estrellas": 2, "titulo": "El manguito es pequeño para mí", "texto": "Tengo el brazo ancho y el manguito se queda justo. Mirad la medida antes de comprar.", "utiles": 22 },
+      { "autor": "Visi M.", "fecha": "2026-05-13", "estrellas": 5, "titulo": "Recomendado", "texto": "Viene con pilas y estuche. Lo tengo en la mesita y me tomo la tensión cada mañana.", "utiles": 10 },
+      { "autor": "Octavio P.", "fecha": "2026-04-02", "estrellas": 3, "titulo": "Instrucciones confusas", "texto": "El aparato va bien, pero las instrucciones para poner la fecha y hora son un lío.", "utiles": 17 },
+      { "autor": "Nieves J.", "fecha": "2026-03-07", "estrellas": 5, "titulo": "Perfecto", "texto": "Fiable y sencillo. La escala de colores ayuda mucho a entender el resultado.", "utiles": 8 },
+      { "autor": "Clemente A.", "fecha": "2026-01-19", "estrellas": 5, "titulo": "Buen regalo", "texto": "Se lo regalé a mi padre, que es hipertenso, y lo usa a diario.", "utiles": 6 },
+      { "autor": "Reyes G.", "fecha": "2025-12-11", "estrellas": 1, "titulo": "Me llegó sin estuche", "texto": "Faltaba el estuche en la caja. Lo reclamé y me lo enviaron, pero tardaron.", "utiles": 11 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Sirve para brazos gruesos?", "respuesta": "El manguito sirve para brazos de 22 a 42 cm de contorno. Mídete el brazo antes de comprar.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Habla o dice los resultados en voz alta?", "respuesta": "No, este modelo no tiene voz. Muestra los resultados en pantalla.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Se puede usar con el cable sin pilas?", "respuesta": "Sí, con un cargador USB de móvil funciona sin pilas.", "autor": "Jorge L." }
+    ],
+    "relacionados": ["p02", "p10", "p07", "p01"]
+  },
+  {
+    "id": "p10",
+    "ref": "TE0010MAN",
+    "categoria": "Hogar y cocina",
+    "marca": "Calidea",
+    "titulo": "Calidea Confort – Manta eléctrica de sofá 160 x 120 cm, tejido suave lavable a máquina, 9 niveles de temperatura y apagado automático a las 3 horas",
+    "tituloCorto": "Manta eléctrica de sofá 160 x 120 cm",
+    "precio": 39.9,
+    "precioAnterior": null,
+    "costeEnvio": 0,
+    "diasEntrega": 2,
+    "vendedor": { "nombre": "Textil Hogar Levante S.L.", "externo": true },
+    "stock": 16,
+    "imagenes": ["img/productos/p10/1.jpg", "img/productos/p10/2.jpg", "img/productos/p10/3.jpg", "img/productos/p10/4.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Crema", "imagen": 0 },
+        { "valor": "Cuadros beige", "imagen": 1 }
+      ] }
+    ],
+    "puntos": [
+      "CALOR EN 10 MINUTOS: 9 niveles de temperatura con mando de botones grandes y pantalla iluminada.",
+      "APAGADO AUTOMÁTICO a las 3 horas para mayor seguridad.",
+      "LAVABLE A MÁQUINA a 30 °C quitando el mando.",
+      "TEJIDO SUAVE DE FRANELA, agradable al tacto.",
+      "BAJO CONSUMO: unos 120 W, menos que una estufa."
+    ],
+    "descripcion": "La manta eléctrica Calidea Confort es perfecta para las tardes de invierno en el sofá. Se calienta rápidamente y mantiene una temperatura constante. Cuenta con protección contra sobrecalentamiento. La vende Textil Hogar Levante S.L. (vendedor externo) y el envío es gratuito.",
+    "caracteristicas": [
+      ["Marca", "Calidea"],
+      ["Medidas", "160 x 120 cm"],
+      ["Material", "Franela de poliéster"],
+      ["Potencia", "120 W"],
+      ["Niveles de temperatura", "9"],
+      ["Apagado automático", "A las 3 horas"],
+      ["Lavado", "A máquina a 30 °C (sin el mando)"],
+      ["Longitud del cable", "2,5 metros"]
+    ],
+    "valoracion": 4.3,
+    "numValoraciones": 1976,
+    "distribucion": [61, 20, 9, 4, 6],
+    "resenas": [
+      { "autor": "Angelines T.", "fecha": "2026-02-18", "estrellas": 5, "titulo": "Ya no paso frío en el sofá", "texto": "Con el nivel 3 tengo suficiente. Se agradece que se apague sola por si me quedo dormida.", "utiles": 45, "variante": "Crema" },
+      { "autor": "Gregorio F.", "fecha": "2026-01-29", "estrellas": 4, "titulo": "Buena, cable algo corto", "texto": "Calienta muy bien. El cable podría ser más largo, necesité un alargador.", "utiles": 20, "variante": "Cuadros beige" },
+      { "autor": "Marisol P.", "fecha": "2026-01-12", "estrellas": 5, "titulo": "Ahorro en calefacción", "texto": "Desde que la tengo pongo menos la calefacción. Muy suave.", "utiles": 31, "variante": "Crema" },
+      { "autor": "Baltasar N.", "fecha": "2025-12-28", "estrellas": 2, "titulo": "Se nota el cableado", "texto": "Se notan un poco los hilos de dentro al tocarla. Calienta bien, pero esperaba más calidad.", "utiles": 16, "variante": "Cuadros beige" },
+      { "autor": "Rocío D.", "fecha": "2025-12-15", "estrellas": 5, "titulo": "Regalo de Navidad perfecto", "texto": "Se la regalé a mi madre y no se la quita de encima.", "utiles": 12, "variante": "Crema" },
+      { "autor": "Paco E.", "fecha": "2025-12-02", "estrellas": 3, "titulo": "Correcta", "texto": "Cumple. Tras lavarla dos veces ha perdido algo de suavidad.", "utiles": 9, "variante": "Crema" },
+      { "autor": "Julia C.", "fecha": "2025-11-20", "estrellas": 5, "titulo": "Mando muy claro", "texto": "Los botones son grandes y la pantalla se ve a oscuras. Muy fácil.", "utiles": 14, "variante": "Cuadros beige" },
+      { "autor": "Ximo R.", "fecha": "2025-11-08", "estrellas": 1, "titulo": "Dejó de calentar un lado", "texto": "A las pocas semanas una zona dejó de calentar. El vendedor la cambió, pero hubo que insistir.", "utiles": 21, "variante": "Crema" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Se puede usar como bajera en la cama?", "respuesta": "Esta es una manta para cubrirse, no está pensada para ponerla debajo del colchón.", "autor": "Respuesta del vendedor (Textil Hogar Levante S.L.)" },
+      { "pregunta": "¿Cuánto gasta de luz?", "respuesta": "Unos 120 W a máxima potencia; a potencia media, bastante menos.", "autor": "Respuesta del vendedor (Textil Hogar Levante S.L.)" }
+    ],
+    "relacionados": ["p06", "p05", "p09", "p03"]
+  }
+]
