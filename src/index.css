@@ -84,6 +84,10 @@ body {
     transform: none;
   }
 }
+/* Con una ventana abierta el consejo no se dibuja, para no tapar sus botones (la voz sigue sonando) */
+body:has([role='dialog']) .nota-tarjeta {
+  display: none;
+}
 .nota-progreso {
   width: 100%;
   animation-name: progreso;
@@ -117,6 +121,26 @@ body {
 }
 .te-btn-naranja:hover {
   background: #fa8900;
+}
+
+/* Mapa de reparto: la furgoneta se desliza entre posiciones y la casa late */
+.te-furgoneta {
+  transition: transform 1s linear;
+}
+.te-pulso {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: te-pulso 1.8s ease-out infinite;
+}
+@keyframes te-pulso {
+  from {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5);
+    opacity: 0;
+  }
 }
 
 .ocultar-scroll::-webkit-scrollbar {

@@ -1,0 +1,318 @@
+[
+  {
+    "id": "p11", "ref": "TE0011RAD", "categoria": "Electrónica", "marca": "Ondaluz",
+    "titulo": "Ondaluz Clásica 210 – Radio portátil FM/AM de estilo retro, altavoz potente, dial grande, a pilas o enchufe, asa de transporte",
+    "tituloCorto": "Radio portátil retro Ondaluz Clásica 210",
+    "precio": 39.9, "precioAnterior": 49.9, "costeEnvio": 0, "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 22,
+    "imagenes": ["img/productos/p11/1.jpg", "img/productos/p11/2.jpg", "img/productos/p11/3.jpg"],
+    "variantes": [],
+    "puntos": [
+      "DIAL GRANDE Y FÁCIL DE LEER: encuentra tu emisora girando una sola rueda, sin menús ni pantallas.",
+      "SONIDO POTENTE: altavoz de 5 W que se oye con claridad en toda la habitación.",
+      "A PILAS O ENCHUFADA: funciona con 4 pilas o con el cable incluido, también durante un apagón.",
+      "ASA DE TRANSPORTE: llévala de la cocina al salón o a la terraza sin esfuerzo."
+    ],
+    "descripcion": "Una radio de las de siempre, con dial analógico y dos mandos: volumen y sintonía. Pensada para quien quiere encenderla y escuchar, sin complicaciones. Incluye cable de alimentación y manual en español con letra grande.",
+    "caracteristicas": [["Marca", "Ondaluz"], ["Modelo", "Clásica 210"], ["Bandas", "FM y AM"], ["Alimentación", "4 pilas LR14 o red eléctrica"], ["Potencia", "5 W"], ["Peso", "1,4 kg"], ["Garantía", "3 años"]],
+    "valoracion": 4.6, "numValoraciones": 1284, "distribucion": [74, 15, 6, 2, 3],
+    "resenas": [
+      { "autor": "Basilio R.", "fecha": "2026-09-02", "estrellas": 5, "titulo": "Como la de toda la vida", "texto": "Se enciende, se gira y ya está. La tengo en la cocina y se oye estupendamente.", "utiles": 33 },
+      { "autor": "Milagros T.", "fecha": "2026-08-11", "estrellas": 5, "titulo": "Fácil de usar", "texto": "Mis padres no querían nada con pantallas y con esta están encantados.", "utiles": 21 },
+      { "autor": "Eusebio L.", "fecha": "2026-06-30", "estrellas": 4, "titulo": "Buena, algo pesada", "texto": "Suena muy bien. Con las pilas puestas pesa un poco, pero el asa ayuda.", "utiles": 9 },
+      { "autor": "Sagrario P.", "fecha": "2026-05-18", "estrellas": 3, "titulo": "La AM se oye regular", "texto": "En FM perfecta. En AM, dentro de casa, hay interferencias.", "utiles": 14 },
+      { "autor": "Damián C.", "fecha": "2026-03-27", "estrellas": 1, "titulo": "Llegó con el mando flojo", "texto": "El mando del volumen bailaba. La devolví y me reembolsaron sin problema.", "utiles": 12 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Incluye las pilas?", "respuesta": "No incluye pilas, pero sí el cable para enchufarla.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Tiene conexión para auriculares?", "respuesta": "Sí, en el lateral, de 3,5 mm.", "autor": "Basilio R." }
+    ],
+    "relacionados": ["p01", "p09", "p13", "p10"]
+  },
+  {
+    "id": "p12", "ref": "TE0012REG", "categoria": "Bricolaje y jardín", "marca": "Verdalia",
+    "titulo": "Verdalia Riego 10 – Regadera de jardín de 10 litros con alcachofa desmontable y asa doble, plástico resistente",
+    "tituloCorto": "Regadera de jardín 10 litros Verdalia",
+    "precio": 12.95, "precioAnterior": null, "costeEnvio": 2.99, "diasEntrega": 3,
+    "vendedor": { "nombre": "Vivero Albufera S.L.", "externo": true }, "stock": 40,
+    "imagenes": ["img/productos/p12/1.jpg", "img/productos/p12/2.jpg", "img/productos/p12/3.jpg", "img/productos/p12/4.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Verde botella", "imagen": 0 },
+        { "valor": "Amarillo", "imagen": 1 },
+        { "valor": "Verde manzana", "imagen": 3 }
+      ] }
+    ],
+    "puntos": [
+      "10 LITROS DE CAPACIDAD: suficiente para el balcón o un jardín pequeño.",
+      "ASA DOBLE: reparte el peso al llevarla llena y al inclinarla para regar.",
+      "ALCACHOFA DESMONTABLE: lluvia fina para plantas delicadas o chorro directo.",
+      "RESISTENTE AL SOL: plástico tratado que no se agrieta a la intemperie."
+    ],
+    "descripcion": "Regadera clásica y ligera para el cuidado diario de tus plantas. Su boca ancha facilita llenarla bajo el grifo y la alcachofa se quita con un simple giro para limpiarla.",
+    "caracteristicas": [["Marca", "Verdalia"], ["Capacidad", "10 litros"], ["Material", "Polipropileno"], ["Peso en vacío", "520 g"], ["Garantía", "2 años"]],
+    "valoracion": 4.3, "numValoraciones": 512, "distribucion": [58, 24, 10, 4, 4],
+    "resenas": [
+      { "autor": "Hortensia G.", "fecha": "2026-08-22", "estrellas": 5, "titulo": "Muy cómoda", "texto": "Con el asa doble no se me cansa la muñeca. Riego todo el balcón en un viaje.", "utiles": 18 },
+      { "autor": "Lorenzo B.", "fecha": "2026-07-05", "estrellas": 4, "titulo": "Bien, aunque llena pesa", "texto": "Diez litros son diez kilos. Si no tenéis mucha fuerza, llenadla a la mitad.", "utiles": 27 },
+      { "autor": "Adela F.", "fecha": "2026-06-12", "estrellas": 2, "titulo": "El envío casi cuesta como media regadera", "texto": "La regadera está bien, pero fijaos en los gastos de envío del vendedor. No lo vi hasta el final.", "utiles": 31 },
+      { "autor": "Tobías M.", "fecha": "2026-04-30", "estrellas": 5, "titulo": "Buen plástico", "texto": "Lleva todo el verano al sol y sigue como el primer día.", "utiles": 6 },
+      { "autor": "Purificación S.", "fecha": "2026-03-16", "estrellas": 4, "titulo": "Cumple", "texto": "La alcachofa da una lluvia muy fina, ideal para las macetas de semilleros.", "utiles": 4 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿La alcachofa se puede quitar?", "respuesta": "Sí, gira y sale. Va bien para limpiarla.", "autor": "Hortensia G." },
+      { "pregunta": "¿Cabe debajo del grifo de la cocina?", "respuesta": "Depende del fregadero: mide 43 cm de largo. Mejor llenarla en la bañera o con manguera.", "autor": "Respuesta del vendedor" }
+    ],
+    "relacionados": ["p19", "p17", "p10", "p16"]
+  },
+  {
+    "id": "p13", "ref": "TE0013AJE", "categoria": "Juguetes y juegos", "marca": "Tablero Real",
+    "titulo": "Tablero Real Torneo – Juego de ajedrez de madera con tablero de 42 cm y piezas contrapesadas, para adultos y niños",
+    "tituloCorto": "Ajedrez de madera Tablero Real 42 cm",
+    "precio": 34.5, "precioAnterior": 42.0, "costeEnvio": 0, "diasEntrega": 2,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 9,
+    "imagenes": ["img/productos/p13/1.jpg", "img/productos/p13/2.jpg"],
+    "variantes": [],
+    "puntos": [
+      "PIEZAS DE MADERA CONTRAPESADAS: estables y agradables al tacto.",
+      "TABLERO DE 42 CM: casillas grandes que se ven bien sin forzar la vista.",
+      "PLEGABLE: se cierra como un maletín y guarda las piezas dentro.",
+      "REGLAMENTO EN ESPAÑOL: incluye folleto con las reglas y aperturas básicas."
+    ],
+    "descripcion": "Un ajedrez clásico para jugar en casa o en el centro de mayores. Mantiene la mente activa y es un regalo perfecto para compartir con los nietos.",
+    "caracteristicas": [["Marca", "Tablero Real"], ["Material", "Madera de haya y abedul"], ["Tamaño del tablero", "42 x 42 cm"], ["Altura del rey", "8,5 cm"], ["Jugadores", "2"]],
+    "valoracion": 4.7, "numValoraciones": 896, "distribucion": [78, 14, 5, 1, 2],
+    "resenas": [
+      { "autor": "Ceferino A.", "fecha": "2026-09-14", "estrellas": 5, "titulo": "Piezas con buen peso", "texto": "No se caen con un roce. Jugamos todas las tardes en el club.", "utiles": 22 },
+      { "autor": "Marisol E.", "fecha": "2026-07-29", "estrellas": 5, "titulo": "Regalo para mi nieto", "texto": "Le estoy enseñando a jugar y le encanta. Llegó muy bien embalado.", "utiles": 15 },
+      { "autor": "Plácido V.", "fecha": "2026-06-08", "estrellas": 3, "titulo": "Una bisagra algo floja", "texto": "El juego es bonito, pero el cierre del tablero no ajusta del todo.", "utiles": 8 },
+      { "autor": "Visitación O.", "fecha": "2026-04-21", "estrellas": 4, "titulo": "Buen tamaño", "texto": "Las casillas se ven bien. Yo lo habría preferido un poco más oscuro.", "utiles": 3 },
+      { "autor": "Amador J.", "fecha": "2026-02-13", "estrellas": 5, "titulo": "Calidad-precio", "texto": "Muy buen acabado por lo que cuesta.", "utiles": 5 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Las piezas se guardan dentro del tablero?", "respuesta": "Sí, el tablero es plegable y tiene hueco para todas.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Sirve para niños de 7 años?", "respuesta": "Sí, aunque las piezas pequeñas no son aptas para menores de 3 años.", "autor": "Ceferino A." }
+    ],
+    "relacionados": ["p20", "p15", "p06", "p11"]
+  },
+  {
+    "id": "p14", "ref": "TE0014REB", "categoria": "Moda", "marca": "Arenal Basics",
+    "titulo": "Arenal Basics – Rebeca de punto con botones y bolsillos, cuello en pico, suave y cálida, unisex",
+    "tituloCorto": "Rebeca de punto con botones y bolsillos",
+    "precio": 29.99, "precioAnterior": 39.99, "costeEnvio": 0, "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 17,
+    "imagenes": ["img/productos/p14/1.jpg", "img/productos/p14/2.jpg", "img/productos/p14/3.jpg", "img/productos/p14/4.jpg", "img/productos/p14/5.jpg"],
+    "variantes": [
+      { "nombre": "Color", "opciones": [
+        { "valor": "Marrón", "imagen": 0 },
+        { "valor": "Rojo", "imagen": 1 },
+        { "valor": "Blanco", "imagen": 2 }
+      ] },
+      { "nombre": "Talla", "opciones": [
+        { "valor": "S" }, { "valor": "M" }, { "valor": "L" }, { "valor": "XL", "agotado": true }, { "valor": "XXL" }
+      ], "guia": true }
+    ],
+    "puntos": [
+      "PUNTO SUAVE Y CÁLIDO: ideal para entretiempo y para estar por casa.",
+      "BOTONES GRANDES: fáciles de abrochar, también con poca movilidad en las manos.",
+      "DOS BOLSILLOS: para las gafas, el móvil o las llaves.",
+      "LAVABLE A MÁQUINA: programa de lana a 30 grados."
+    ],
+    "descripcion": "La rebeca de toda la vida, con botones grandes y bolsillos frontales. Un básico cómodo que combina con todo.",
+    "caracteristicas": [["Marca", "Arenal Basics"], ["Composición", "70 % lana, 30 % acrílico"], ["Cierre", "Botones"], ["Lavado", "A máquina, 30 °C"]],
+    "valoracion": 4.2, "numValoraciones": 743, "distribucion": [55, 23, 12, 5, 5],
+    "resenas": [
+      { "autor": "Angustias C.", "fecha": "2026-10-03", "estrellas": 5, "titulo": "Abriga y no pica", "texto": "Tenía miedo de que picara por la lana y es muy agradable.", "utiles": 19, "variante": "Marrón, L" },
+      { "autor": "Fulgencio N.", "fecha": "2026-09-19", "estrellas": 4, "titulo": "Talla algo justa", "texto": "Uso una L y me queda algo ajustada. Pedid una más si os gusta holgada.", "utiles": 34, "variante": "Marrón, L" },
+      { "autor": "Herminia D.", "fecha": "2026-08-07", "estrellas": 2, "titulo": "El rojo no es como en la foto", "texto": "Es más oscuro. Lo devolví gratis desde el móvil, eso sí.", "utiles": 16, "variante": "Rojo, M" },
+      { "autor": "Severino H.", "fecha": "2026-05-25", "estrellas": 5, "titulo": "Botones cómodos", "texto": "Con la artrosis me cuesta abrochar y estos botones son una maravilla.", "utiles": 41, "variante": "Marrón, XXL" },
+      { "autor": "Consuelo I.", "fecha": "2026-03-04", "estrellas": 4, "titulo": "Bonita", "texto": "Buena calidad. Tras varios lavados sigue igual.", "utiles": 7, "variante": "Blanco, M" }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Encoge al lavarla?", "respuesta": "Si la lavas a 30 grados en programa de lana, no.", "autor": "Respuesta de la tienda" },
+      { "pregunta": "¿Es de hombre o de mujer?", "respuesta": "Es unisex. Consulta la guía de tallas.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p03", "p10", "p07", "p15"]
+  },
+  {
+    "id": "p15", "ref": "TE0015LIB", "categoria": "Libros", "marca": "Editorial Fogones",
+    "titulo": "Recetario clásico de Nueva Orleans (Tapa dura, edición facsímil) – Colección Cocinas del Mundo",
+    "tituloCorto": "Recetario clásico de Nueva Orleans",
+    "precio": 18.5, "precioAnterior": null, "costeEnvio": 0, "diasEntrega": 2,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 12,
+    "imagenes": ["img/productos/p15/1.jpg", "img/productos/p15/2.jpg", "img/productos/p15/3.jpg"],
+    "variantes": [],
+    "puntos": [
+      "EDICIÓN FACSÍMIL: reproduce un recetario antiguo con todo su encanto.",
+      "MÁS DE 300 RECETAS: guisos, panes, dulces y conservas tradicionales.",
+      "CON GLOSARIO: equivalencias de medidas e ingredientes.",
+      "TAPA DURA: pensado para durar en la cocina y regalar."
+    ],
+    "descripcion": "Un viaje por la cocina tradicional a través de las páginas de un recetario de otra época. Ideal para los amantes de la gastronomía y de los libros antiguos.",
+    "caracteristicas": [["Editorial", "Editorial Fogones"], ["Encuadernación", "Tapa dura"], ["Páginas", "412"], ["Idioma", "Inglés, con glosario en español"]],
+    "valoracion": 4.5, "numValoraciones": 208, "distribucion": [68, 20, 7, 3, 2],
+    "resenas": [
+      { "autor": "Eulalia M.", "fecha": "2026-09-08", "estrellas": 5, "titulo": "Una joya", "texto": "Me encanta leer recetas antiguas. El libro es precioso.", "utiles": 11 },
+      { "autor": "Gaspar Z.", "fecha": "2026-07-13", "estrellas": 3, "titulo": "Ojo, está en inglés", "texto": "No me fijé en el idioma. Hay que leer bien la ficha antes de comprar.", "utiles": 38 },
+      { "autor": "Leocadia B.", "fecha": "2026-06-02", "estrellas": 5, "titulo": "Regalo perfecto", "texto": "Se lo regalé a mi hermana, que colecciona recetarios.", "utiles": 4 },
+      { "autor": "Nicanor T.", "fecha": "2026-04-09", "estrellas": 4, "titulo": "Bonita edición", "texto": "Bien encuadernado. Algunas medidas son raras, pero el glosario ayuda.", "utiles": 6 },
+      { "autor": "Rufina A.", "fecha": "2026-01-22", "estrellas": 4, "titulo": "Curioso", "texto": "He probado tres recetas y salen bien.", "utiles": 2 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Está traducido al español?", "respuesta": "El texto original está en inglés. Incluye un glosario en español.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p06", "p08", "p17", "p13"]
+  },
+  {
+    "id": "p16", "ref": "TE0016BIC", "categoria": "Deportes", "marca": "Pedalia",
+    "titulo": "Pedalia Urban E7 – Bicicleta eléctrica de paseo, cuadro bajo fácil de subir, motor de 250 W, autonomía de 70 km, cesta delantera",
+    "tituloCorto": "Bicicleta eléctrica de paseo Pedalia Urban E7",
+    "precio": 649.0, "precioAnterior": 799.0, "costeEnvio": 0, "diasEntrega": 3,
+    "vendedor": { "nombre": "Ciclos del Turia S.L.", "externo": true }, "stock": 4,
+    "imagenes": ["img/productos/p16/1.jpg", "img/productos/p16/2.jpg", "img/productos/p16/3.jpg"],
+    "variantes": [],
+    "puntos": [
+      "CUADRO BAJO: subes y bajas sin tener que levantar la pierna.",
+      "MOTOR DE 250 W: te ayuda en las cuestas con tres niveles de asistencia.",
+      "HASTA 70 KM DE AUTONOMÍA: batería extraíble que se carga en un enchufe normal.",
+      "LISTA PARA LA CIUDAD: cesta delantera, luces y guardabarros incluidos."
+    ],
+    "descripcion": "Una bicicleta eléctrica cómoda y estable para los recados y los paseos. Se entrega casi montada: solo hay que colocar los pedales y el manillar, siguiendo la guía incluida.",
+    "caracteristicas": [["Marca", "Pedalia"], ["Motor", "250 W en buje trasero"], ["Batería", "36 V, 13 Ah, extraíble"], ["Autonomía", "Hasta 70 km"], ["Peso", "24 kg"], ["Garantía", "3 años (batería, 2 años)"]],
+    "valoracion": 4.4, "numValoraciones": 327, "distribucion": [63, 21, 9, 3, 4],
+    "resenas": [
+      { "autor": "Marcelino Q.", "fecha": "2026-09-27", "estrellas": 5, "titulo": "He vuelto a pedalear", "texto": "Con 71 años y las rodillas tocadas, vuelvo a salir todos los días.", "utiles": 52 },
+      { "autor": "Dorotea K.", "fecha": "2026-08-15", "estrellas": 4, "titulo": "Pesa, pero va muy bien", "texto": "Subirla por escaleras es imposible sola. En llano es una delicia.", "utiles": 29 },
+      { "autor": "Ildefonso R.", "fecha": "2026-07-01", "estrellas": 3, "titulo": "Montaje complicado", "texto": "La guía se entiende, pero necesité ayuda con el manillar.", "utiles": 17 },
+      { "autor": "Agustina P.", "fecha": "2026-05-09", "estrellas": 5, "titulo": "Muy estable", "texto": "El cuadro bajo me da mucha seguridad.", "utiles": 13 },
+      { "autor": "Hilario G.", "fecha": "2026-02-20", "estrellas": 2, "titulo": "La batería tardó en llegar", "texto": "Me la mandaron aparte, una semana después. El vendedor respondió, pero tardó.", "utiles": 21 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Hay que tener carné para llevarla?", "respuesta": "No, al estar limitada a 25 km/h y 250 W se considera una bicicleta.", "autor": "Respuesta del vendedor" },
+      { "pregunta": "¿Cuánto tarda en cargar?", "respuesta": "Unas 5 horas para una carga completa.", "autor": "Respuesta del vendedor" }
+    ],
+    "relacionados": ["p07", "p09", "p12", "p19"]
+  },
+  {
+    "id": "p17", "ref": "TE0017MIE", "categoria": "Alimentación", "marca": "Colmenar del Sur",
+    "titulo": "Colmenar del Sur – Miel de azahar cruda de apicultores españoles, tarro de cristal de 1 kg",
+    "tituloCorto": "Miel de azahar española, tarro de 1 kg",
+    "unidad": "11,90 € / kg",
+    "precio": 11.9, "precioAnterior": 14.5, "costeEnvio": 0, "diasEntrega": 2,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 8,
+    "imagenes": ["img/productos/p17/1.jpg", "img/productos/p17/2.jpg", "img/productos/p17/3.jpg"],
+    "variantes": [],
+    "puntos": [
+      "100 % ESPAÑOLA: de colmenas de la Comunidad Valenciana y Andalucía.",
+      "CRUDA Y SIN FILTRAR EN EXCESO: conserva su aroma natural.",
+      "SABOR SUAVE A AZAHAR: perfecta para infusiones, yogur o tostadas.",
+      "TARRO DE CRISTAL: reutilizable y fácil de abrir."
+    ],
+    "descripcion": "Miel de azahar recolectada en primavera, de color claro y sabor delicado. Es normal que cristalice con el frío: basta calentarla al baño maría para que vuelva a ser líquida.",
+    "caracteristicas": [["Marca", "Colmenar del Sur"], ["Peso neto", "1 kg"], ["Origen", "España"], ["Conservación", "Lugar fresco y seco"]],
+    "valoracion": 4.8, "numValoraciones": 1560, "distribucion": [84, 10, 3, 1, 2],
+    "resenas": [
+      { "autor": "Prudencio V.", "fecha": "2026-10-01", "estrellas": 5, "titulo": "Sabe a miel de verdad", "texto": "Nada que ver con la del súper. Repetiré.", "utiles": 26 },
+      { "autor": "Trinidad L.", "fecha": "2026-08-19", "estrellas": 5, "titulo": "Muy rica", "texto": "La tomo con el té todas las mañanas.", "utiles": 8 },
+      { "autor": "Bonifacio S.", "fecha": "2026-06-24", "estrellas": 1, "titulo": "Llegó el tarro roto", "texto": "Venía mal embalado. Pedí el reembolso y me lo devolvieron enseguida.", "utiles": 19 },
+      { "autor": "Celestina U.", "fecha": "2026-05-03", "estrellas": 4, "titulo": "Se cristalizó", "texto": "Al principio pensé que estaba mal, pero la ficha ya lo explica. Con baño maría, perfecta.", "utiles": 15 },
+      { "autor": "Evaristo F.", "fecha": "2026-03-11", "estrellas": 5, "titulo": "Excelente", "texto": "Buen precio para ser de esta calidad.", "utiles": 3 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Es apta para diabéticos?", "respuesta": "La miel es azúcar natural. Consulta siempre con tu médico.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p08", "p15", "p05", "p18"]
+  },
+  {
+    "id": "p18", "ref": "TE0018PAS", "categoria": "Salud", "marca": "MediClara",
+    "titulo": "MediClara Semana – Pastillero semanal de 7 días con letras grandes, cierre seguro y compartimentos amplios",
+    "tituloCorto": "Pastillero semanal con letras grandes",
+    "precio": 7.49, "precioAnterior": null, "costeEnvio": 0, "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 35,
+    "imagenes": ["img/productos/p18/1.jpg", "img/productos/p18/2.jpg"],
+    "variantes": [
+      { "nombre": "Modelo", "opciones": [
+        { "valor": "Alargado", "imagen": 0 },
+        { "valor": "Redondo", "imagen": 1, "extra": 2 }
+      ] }
+    ],
+    "puntos": [
+      "LETRAS GRANDES: cada día de la semana se lee sin gafas.",
+      "CIERRE SEGURO: no se abre en el bolso, pero se levanta con un dedo.",
+      "COMPARTIMENTOS AMPLIOS: caben varias pastillas en cada día.",
+      "FÁCIL DE LIMPIAR: apto para lavar con agua y jabón."
+    ],
+    "descripcion": "Organiza tu medicación de la semana y evita olvidos. Un compañero sencillo, con los días escritos bien grandes: L, M, X, J, V, S y D.",
+    "caracteristicas": [["Marca", "MediClara"], ["Compartimentos", "7"], ["Material", "Plástico sin BPA"], ["Medidas", "18 x 4 x 2,5 cm"]],
+    "valoracion": 4.6, "numValoraciones": 2041, "distribucion": [73, 17, 6, 2, 2],
+    "resenas": [
+      { "autor": "Inocencia R.", "fecha": "2026-09-20", "estrellas": 5, "titulo": "Se acabaron los olvidos", "texto": "Lo preparo el domingo y me olvido de contar pastillas.", "utiles": 44 },
+      { "autor": "Patricio D.", "fecha": "2026-08-03", "estrellas": 4, "titulo": "Práctico", "texto": "Va muy bien. Me costó un poco abrirlo los primeros días.", "utiles": 10 },
+      { "autor": "Eloísa J.", "fecha": "2026-06-16", "estrellas": 2, "titulo": "Se abrió en el bolso", "texto": "Una vez se me abrió el compartimento del lunes. No sé si tuve mala suerte.", "utiles": 13 },
+      { "autor": "Baldomero C.", "fecha": "2026-04-05", "estrellas": 5, "titulo": "Barato y útil", "texto": "Compré uno para mí y otro para mi mujer.", "utiles": 5 },
+      { "autor": "Otilia G.", "fecha": "2026-02-02", "estrellas": 5, "titulo": "Letras muy claras", "texto": "Se leen perfectamente, incluso sin gafas.", "utiles": 9 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Tiene separación de mañana y noche?", "respuesta": "Este modelo tiene un compartimento por día.", "autor": "Respuesta de la tienda" }
+    ],
+    "relacionados": ["p09", "p17", "p10", "p11"]
+  },
+  {
+    "id": "p19", "ref": "TE0019TAL", "categoria": "Bricolaje y jardín", "marca": "Fuerza Pro",
+    "titulo": "Fuerza Pro 12 V – Taladro atornillador sin cable con maletín de 120 accesorios, batería de litio y luz LED",
+    "tituloCorto": "Taladro atornillador sin cable con maletín",
+    "precio": 79.0, "precioAnterior": 99.0, "costeEnvio": 0, "diasEntrega": 2,
+    "vendedor": { "nombre": "Ferretería Levantina S.A.", "externo": true }, "stock": 15,
+    "imagenes": ["img/productos/p19/1.jpg", "img/productos/p19/2.jpg", "img/productos/p19/3.jpg"],
+    "variantes": [],
+    "puntos": [
+      "SIN CABLES: batería de litio de 12 V con cargador rápido incluido.",
+      "LIGERO Y MANEJABLE: pesa menos de 1 kg para trabajar sin cansarte.",
+      "MALETÍN COMPLETO: 120 accesorios entre brocas, puntas y herramientas básicas.",
+      "LUZ LED: ilumina la zona de trabajo."
+    ],
+    "descripcion": "Todo lo necesario para las pequeñas reparaciones de casa: colgar cuadros, montar muebles o apretar tornillos. Todo ordenado en un maletín resistente.",
+    "caracteristicas": [["Marca", "Fuerza Pro"], ["Voltaje", "12 V"], ["Batería", "Litio, 1,5 Ah"], ["Accesorios", "120 piezas"], ["Garantía", "3 años"]],
+    "valoracion": 4.1, "numValoraciones": 689, "distribucion": [50, 26, 13, 5, 6],
+    "resenas": [
+      { "autor": "Cipriano H.", "fecha": "2026-09-11", "estrellas": 5, "titulo": "Para casa, perfecto", "texto": "He colgado todos los cuadros y montado una estantería sin problema.", "utiles": 20 },
+      { "autor": "Remigio A.", "fecha": "2026-07-22", "estrellas": 4, "titulo": "Buen maletín", "texto": "Tiene de todo. Para hormigón se queda corto.", "utiles": 24 },
+      { "autor": "Sinforosa T.", "fecha": "2026-05-30", "estrellas": 3, "titulo": "Algunas puntas son blandas", "texto": "El taladro va bien, pero algunas puntas se desgastan pronto.", "utiles": 12 },
+      { "autor": "Atilano M.", "fecha": "2026-04-14", "estrellas": 1, "titulo": "El cargador no funcionaba", "texto": "Contacté con el vendedor y tardaron dos semanas en enviarme otro.", "utiles": 30 },
+      { "autor": "Genoveva L.", "fecha": "2026-02-26", "estrellas": 5, "titulo": "Regalo acertado", "texto": "Se lo regalé a mi yerno y le ha encantado.", "utiles": 3 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Sirve para taladrar paredes de ladrillo?", "respuesta": "Para ladrillo blando sí, para hormigón necesitarías un taladro percutor.", "autor": "Respuesta del vendedor" }
+    ],
+    "relacionados": ["p12", "p16", "p02", "p13"]
+  },
+  {
+    "id": "p20", "ref": "TE0020DOM", "categoria": "Juguetes y juegos", "marca": "Tablero Real",
+    "titulo": "Tablero Real Doble Seis – Juego de dominó de 28 fichas grandes con puntos marcados en negro y caja de transporte",
+    "tituloCorto": "Dominó de fichas grandes con caja",
+    "precio": 14.95, "precioAnterior": null, "costeEnvio": 0, "diasEntrega": 1,
+    "vendedor": { "nombre": "la propia tienda", "externo": false }, "stock": 28,
+    "imagenes": ["img/productos/p20/1.jpg", "img/productos/p20/2.jpg", "img/productos/p20/3.jpg"],
+    "variantes": [],
+    "puntos": [
+      "FICHAS GRANDES: se cogen con facilidad y se ven bien.",
+      "PUNTOS BIEN MARCADOS: en negro sobre fondo claro para distinguirlos sin esfuerzo.",
+      "28 FICHAS: juego completo de doble seis.",
+      "CAJA DE TRANSPORTE: lleva la partida al parque o al hogar del jubilado."
+    ],
+    "descripcion": "El juego de siempre, con fichas de buen tamaño. Perfecto para las tardes con amigos y la familia.",
+    "caracteristicas": [["Marca", "Tablero Real"], ["Fichas", "28"], ["Material", "Resina"], ["Medidas de cada ficha", "5 x 2,5 cm"], ["Jugadores", "De 2 a 4"]],
+    "valoracion": 4.5, "numValoraciones": 1103, "distribucion": [67, 21, 7, 3, 2],
+    "resenas": [
+      { "autor": "Melitón P.", "fecha": "2026-09-30", "estrellas": 5, "titulo": "El mejor para el hogar del jubilado", "texto": "Las fichas se ven muy bien. Suenan como las de antes.", "utiles": 28 },
+      { "autor": "Encarnación E.", "fecha": "2026-08-13", "estrellas": 5, "titulo": "Buen tamaño", "texto": "Con mis manos ya no me apaño con las pequeñas y estas van genial.", "utiles": 18 },
+      { "autor": "Saturnino B.", "fecha": "2026-06-20", "estrellas": 3, "titulo": "La caja es floja", "texto": "Las fichas están muy bien, pero la caja es de cartón fino.", "utiles": 11 },
+      { "autor": "Modesta Y.", "fecha": "2026-04-27", "estrellas": 4, "titulo": "Bien", "texto": "Llegó al día siguiente. Buena compra.", "utiles": 2 },
+      { "autor": "Casimiro O.", "fecha": "2026-01-30", "estrellas": 5, "titulo": "Recomendable", "texto": "Regalo para mi padre. Juega todos los días.", "utiles": 6 }
+    ],
+    "preguntas": [
+      { "pregunta": "¿Las fichas son pesadas?", "respuesta": "Tienen un peso agradable, no se mueven de la mesa.", "autor": "Melitón P." }
+    ],
+    "relacionados": ["p13", "p15", "p06", "p11"]
+  }
+]

@@ -4,8 +4,77 @@ import { Heart, MapPin, Share, ShieldCheck, ThumbsUp, UserRound } from 'lucide-r
 import { Carrusel, Estrellas, Modal, useAvisoSimulador, useUrl } from '../../components/comun/Simulador'
 import { useNota, useNotaAlVer, useNotas } from '../../components/comun/Notas'
 import { useSim } from '../../store/useSim'
-import { descuento, euros, fechaLarga, fechaResena, opcionesPorDefecto, precioConOpciones, producto } from '../../lib/formato'
+import { descuento, euros, fechaLarga, fechaResena, imagenSegunOpciones, opcionesPorDefecto, precioConOpciones, producto, totales } from '../../lib/formato'
+import { nombreCortoMetodo, redondear } from '../../lib/todoenvio'
 import { BASE, DOMINIO, MiniProducto, Precio, Rapido, T, textoEntrega, useTienda } from './comun'
+import { ModalSinSaldo, Procesando, opcionesEntregaTE, useRealizarPedido } from './CheckoutTE'
+
+// Hoja inferior de «Comprar ya»: con dirección y pago guardados, se compra sin pasar por la tramitación completa
+function HojaComprarYa({ p, opciones, cantidad, vendedor, onCerrar }) {
+  const t = useTienda()
+  const actualizar = useSim((s) => s.actualizar)
+  const avisar = useAvisoSimulador()
+  const navigate = useNavigate()
+  const linea = { clave: 'compra-ya', id: p.id, opciones, cantidad }
+  const { det, subtotal, envioVendedores } = totales([linea])
+  const [ops] = useState(() => opcionesEntregaTE(det))
+  const [sel, setSel] = useState('estandar')
+  const { realizar, procesando, sinSaldo, cerrarSinSaldo } = useRealizarPedido()
+  const entrega = ops.find((o) => o.id === sel)
+  const envio = redondear(entrega.coste + envioVendedores)
+  const total = redondear(subtotal + envio)
+  const cambiarEn = (paso) => {
+    actualizar(T, { compraYa: linea })
+    navigate(`${BASE}/tramitar/${paso}?modo=compraya`)
+  }
+  return (
+    <>
+      <Modal onCerrar={onCerrar}>
+        <div className="flex gap-3 pr-8">
+          <img src={imagenSegunOpciones(p, opciones)} alt="" className="h-20 w-20 shrink-0 object-contain" />
+          <div>
+            <p className="text-lg font-bold first-letter:uppercase">{entrega.titulo}</p>
+            <button onClick={() => cambiarEn('revisar')} className="text-left text-te-enlace hover:underline">Ver todas las opciones de entrega</button>
+            <p className="text-sm text-te-gris">Enviado y vendido por {vendedor}</p>
+          </div>
+        </div>
+        <div className="ocultar-scroll mt-3 flex gap-2 overflow-x-auto" data-nota="opciones-entrega">
+          {ops.slice(0, 3).map((o) => (
+            <button key={o.id} onClick={() => setSel(o.id)} aria-pressed={sel === o.id} className={`w-44 shrink-0 rounded-lg border p-2 text-left text-[0.95rem] ${sel === o.id ? 'border-2 border-te-enlace font-bold' : 'border-slate-400'}`}>
+              <span className="block first-letter:uppercase">{o.titulo}</span>
+              <span className="block font-normal">{o.coste ? euros(o.coste) : 'GRATIS'} {o.detalle}</span>
+            </button>
+          ))}
+        </div>
+        <dl className="mt-3 divide-y divide-slate-200">
+          <div className="flex min-h-12 items-center gap-3">
+            <dt className="w-20 shrink-0 text-te-enlace">Enviar a</dt>
+            <dd className="min-w-0 flex-1 truncate">{t.direccion.nombre}, {t.direccion.calle}</dd>
+            <button onClick={() => cambiarEn('direccion')} className="shrink-0 text-te-enlace">Cambiar</button>
+          </div>
+          <div className="flex min-h-12 items-center gap-3">
+            <dt className="w-20 shrink-0 text-te-enlace">Pago</dt>
+            <dd className="min-w-0 flex-1 truncate">{nombreCortoMetodo(t.pago)}</dd>
+            <button onClick={() => cambiarEn('pago')} className="shrink-0 text-te-enlace">Cambiar</button>
+          </div>
+          <div className="flex min-h-12 items-center gap-3">
+            <dt className="w-20 shrink-0 text-te-enlace">Total</dt>
+            <dd><b className="text-lg">{euros(total)}</b> <span className="text-te-gris">(incluye impuestos)</span></dd>
+          </div>
+        </dl>
+        <p className="mt-1 rounded-lg bg-indigo-50 p-2 font-sans text-indigo-950 ring-1 ring-indigo-300">Saldo de prácticas: <b>{euros(t.saldo ?? 0)}</b></p>
+        <button onClick={() => realizar({ t, det, subtotal, envio, total, entrega, esCompraYa: true })} className="te-btn-naranja mt-3 min-h-14 w-full rounded-full text-lg font-semibold">
+          Comprar ahora
+        </button>
+        <p className="mt-2 text-sm text-te-gris">
+          Al completar tu pedido aceptas nuestras <button onClick={() => avisar()} className="text-te-enlace underline">Condiciones de uso y venta</button>.
+        </p>
+      </Modal>
+      {procesando && <Procesando />}
+      {sinSaldo && <ModalSinSaldo datos={sinSaldo} onCerrar={cerrarSinSaldo} />}
+    </>
+  )
+}
 
 function Galeria({ p, indice, setIndice }) {
   const avisar = useAvisoSimulador()
@@ -289,6 +358,7 @@ function FichaProducto({ id }) {
   const [cantidad, setCantidad] = useState(1)
   const [errorTalla, setErrorTalla] = useState(false)
   const [devol, setDevol] = useState(false)
+  const [hoja, setHoja] = useState(false)
 
   useUrl(`${DOMINIO}/dp/${p.ref}`)
   useNota('precio-final')
@@ -347,7 +417,7 @@ function FichaProducto({ id }) {
               </p>
             )}
             <p className="mt-1">
-              <Rapido /> <b>Mañana</b>
+              <Rapido /> <b className="inline-block first-letter:uppercase">{e.cuando}</b>
             </p>
             <button onClick={() => { setDevol(true); mostrar('desistimiento') }} className="min-h-10 text-te-enlace hover:underline">
               Devoluciones GRATIS
@@ -380,7 +450,7 @@ function FichaProducto({ id }) {
           <label className="flex min-h-12 items-center gap-2 rounded-lg border border-slate-400 bg-[#f0f2f2] px-3 shadow-sm">
             <span>Cantidad:</span>
             <select value={cantidad} onChange={(ev) => setCantidad(+ev.target.value)} className="min-h-11 flex-1 bg-transparent text-lg">
-              {Array.from({ length: 10 }, (_, i) => (
+              {Array.from({ length: Math.min(10, p.stock) }, (_, i) => (
                 <option key={i + 1}>{i + 1}</option>
               ))}
             </select>
@@ -401,6 +471,7 @@ function FichaProducto({ id }) {
               className="te-btn-naranja min-h-12 w-full rounded-full text-[1.05rem]"
               onClick={() => {
                 if (!comprobar()) return
+                if (t.usuario && t.direccion && t.pago) return setHoja(true)
                 actualizar(T, { compraYa: { clave: 'compra-ya', id: p.id, opciones, cantidad } })
                 navigate(t.usuario ? `${BASE}/tramitar/direccion?modo=compraya` : `${BASE}/identificacion?siguiente=direccion&modo=compraya`)
               }}
@@ -485,6 +556,7 @@ function FichaProducto({ id }) {
       <Preguntas p={p} />
       <Opiniones p={p} />
 
+      {hoja && <HojaComprarYa p={p} opciones={opciones} cantidad={cantidad} vendedor={vendedor} onCerrar={() => setHoja(false)} />}
       {devol && (
         <Modal titulo="Devoluciones" onCerrar={() => setDevol(false)}>
           <div data-nota="devolucion" className="space-y-3 text-[1.05rem] leading-relaxed">

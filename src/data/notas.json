@@ -41,6 +41,13 @@
     { "id": "wifi-publica", "texto": "Evita comprar conectado a redes wifi públicas, como las de cafeterías o estaciones. Es más seguro usar los datos de tu móvil o la wifi de casa.", "aleatoria": true },
     { "id": "cerrar-sesion", "texto": "Si compras desde un ordenador compartido, como el de una biblioteca, cierra siempre la sesión al terminar.", "aleatoria": true },
     { "id": "precio-comparar", "texto": "Antes de comprar, compara el mismo producto en varias tiendas. El precio puede cambiar bastante de una a otra.", "aleatoria": true },
-    { "id": "datos-guardados", "texto": "Guardar la tarjeta en una tienda es cómodo, pero hazlo solo en tiendas de confianza y en tu propio dispositivo.", "aleatoria": true }
+    { "id": "datos-guardados", "texto": "Guardar la tarjeta en una tienda es cómodo, pero hazlo solo en tiendas de confianza y en tu propio dispositivo.", "aleatoria": true },
+    { "id": "codigo-verificacion", "objetivo": "codigo", "texto": "La tienda te envía un código para comprobar que el correo es tuyo. Ese código es secreto: nunca se lo digas a nadie, aunque te llamen diciendo ser de la tienda." },
+    { "id": "saldo-practicas", "objetivo": "saldo", "texto": "Aquí ves tus 500 euros de prácticas. En la vida real, la tienda no enseña tu saldo: es el banco quien acepta o rechaza el pago." },
+    { "id": "saldo-insuficiente", "texto": "Si tu banco rechaza el pago no se cobra nada. Revisa la cesta o prueba con otro medio de pago." },
+    { "id": "cancelar-pedido", "objetivo": "cancelar", "texto": "Puedes cancelar un pedido mientras no haya salido del almacén. Después tendrás que esperar a recibirlo y devolverlo." },
+    { "id": "seguimiento-mapa", "objetivo": "mapa", "texto": "El punto azul es tu casa y la furgoneta es el repartidor. Cuando salga a reparto verás cómo se acerca, parada a parada." },
+    { "id": "sms-reparto", "texto": "Mira el seguimiento siempre desde la aplicación de la tienda. Si un SMS te pide pagar por tu entrega, es un engaño." },
+    { "id": "tarjeta-regalo", "texto": "Si alguien te pide por teléfono que compres tarjetas regalo y le dictes el código, es una estafa. Cuelga y avisa a un familiar." }
   ]
 }

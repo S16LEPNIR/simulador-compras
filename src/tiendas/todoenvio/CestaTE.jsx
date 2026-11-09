@@ -1,19 +1,50 @@
 import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 import { CircleCheck, Minus, Plus, Trash } from 'lucide-react'
-import { useAvisoSimulador, useUrl, Carrusel } from '../../components/comun/Simulador'
+import { useUrl, Carrusel } from '../../components/comun/Simulador'
 import { useNota } from '../../components/comun/Notas'
 import { useSim } from '../../store/useSim'
-import { euros, imagenSegunOpciones, producto, textoOpciones, totales } from '../../lib/formato'
+import { euros, imagenSegunOpciones, precioConOpciones, producto, textoOpciones, totales } from '../../lib/formato'
+import { redondear } from '../../lib/todoenvio'
 import { BASE, DOMINIO, MiniProducto, Precio, T, useTienda } from './comun'
+
+function Guardados() {
+  const t = useTienda()
+  const mover = useSim((s) => s.moverACesta)
+  const eliminar = useSim((s) => s.eliminarGuardado)
+  if (!t.guardados.length) return null
+  return (
+    <section className="mt-2 bg-white p-4 md:col-start-1 md:mt-0 md:rounded-lg">
+      <h2 className="text-xl font-extrabold">Guardado para más tarde ({t.guardados.length})</h2>
+      <ul className="mt-2 divide-y divide-slate-200">
+        {t.guardados.map((l) => {
+          const p = producto(l.id)
+          return (
+            <li key={l.clave} className="flex gap-3 py-3">
+              <img src={imagenSegunOpciones(p, l.opciones)} alt="" className="h-20 w-20 shrink-0 rounded bg-[#f7f7f7] object-contain p-1 mix-blend-multiply" />
+              <div className="min-w-0 flex-1">
+                <p className="line-clamp-2">{p.tituloCorto}</p>
+                <b>{euros(precioConOpciones(p, l.opciones))}</b>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  <button onClick={() => mover(l.clave)} className="min-h-10 rounded-full border border-slate-400 px-4">Mover a la cesta</button>
+                  <button onClick={() => eliminar(l.clave)} className="min-h-10 rounded-full border border-slate-400 px-4">Eliminar</button>
+                </div>
+              </div>
+            </li>
+          )
+        })}
+      </ul>
+    </section>
+  )
+}
 
 export default function CestaTE() {
   useUrl(`${DOMINIO}/gp/cart/view.html`)
   const t = useTienda()
   const cambiar = useSim((s) => s.cambiarCantidad)
   const eliminar = useSim((s) => s.eliminarDeCesta)
+  const guardar = useSim((s) => s.guardarParaMasTarde)
   const actualizar = useSim((s) => s.actualizar)
   const navigate = useNavigate()
-  const avisar = useAvisoSimulador()
   const [params] = useSearchParams()
   const anadido = params.get('anadido')
   const { det, subtotal, unidades, envioVendedores } = totales(t.carrito)
@@ -43,6 +74,13 @@ export default function CestaTE() {
             </Link>
           </div>
         </div>
+        {t.usuario && !t.metodosPago.some((m) => m.tipo === 'bizum') && (
+          <p className="mt-2 bg-white p-4">
+            <b>Bizum ya está aquí.</b> Añade tu cuenta para usarlo al pagar.{' '}
+            <Link to={`${BASE}/cartera/anadir`} className="text-te-enlace underline">Añade Bizum</Link>
+          </p>
+        )}
+        <Guardados />
         <section className="mt-3 bg-white p-4">
           <h2 className="text-xl font-extrabold">Productos que te pueden interesar</h2>
           <p className="text-sm text-te-gris">Patrocinado</p>
@@ -68,6 +106,13 @@ export default function CestaTE() {
             Subtotal ({unidades} {unidades === 1 ? 'producto' : 'productos'}): <b>{euros(subtotal)}</b>
           </p>
           {envioVendedores > 0 && <p className="mt-1 text-[0.98rem] text-te-rojo">+ {euros(envioVendedores)} de gastos de envío de vendedores externos</p>}
+          {t.saldo !== null && (
+            <p className={`mt-2 rounded-lg p-2 font-sans ring-1 ${t.saldo >= subtotal + envioVendedores ? 'bg-indigo-50 text-indigo-950 ring-indigo-300' : 'bg-red-50 font-semibold text-red-950 ring-red-400'}`}>
+              {t.saldo >= subtotal + envioVendedores
+                ? <>Saldo de prácticas: <b>{euros(t.saldo)}</b></>
+                : <>Tu saldo es de {euros(t.saldo)}. Te faltan {euros(redondear(subtotal + envioVendedores - t.saldo))}: quita algún producto.</>}
+            </p>
+          )}
           <button onClick={tramitar} className="te-btn-amarillo mt-3 min-h-12 w-full rounded-full text-[1.05rem]">
             Tramitar pedido ({unidades} {unidades === 1 ? 'producto' : 'productos'})
           </button>
@@ -113,7 +158,7 @@ export default function CestaTE() {
                   <button onClick={() => eliminar(T, l.clave)} className="min-h-10 rounded-full border border-slate-400 px-4 hover:bg-slate-50">
                     Eliminar
                   </button>
-                  <button onClick={() => avisar('«Guardar para más tarde» no está disponible en el simulador.')} className="min-h-10 rounded-full border border-slate-400 px-4 hover:bg-slate-50">
+                  <button onClick={() => guardar(l.clave)} className="min-h-10 rounded-full border border-slate-400 px-4 hover:bg-slate-50">
                     Guardar para más tarde
                   </button>
                 </div>
@@ -125,6 +170,7 @@ export default function CestaTE() {
           Subtotal ({unidades} {unidades === 1 ? 'producto' : 'productos'}): <b>{euros(subtotal)}</b>
         </p>
       </div>
+      <Guardados />
     </div>
   )
 }

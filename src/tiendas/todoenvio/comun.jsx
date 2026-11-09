@@ -1,9 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { Check, Lock } from 'lucide-react'
+import { Check, GraduationCap, Lock, Mail, Wallet } from 'lucide-react'
 import { LogoTodoenvio } from '../../components/comun/Logos'
 import { useSim } from '../../store/useSim'
 import { Estrellas } from '../../components/comun/Simulador'
 import { cuando, descuento, euros, partesPrecio, sumarDias } from '../../lib/formato'
+import { SALDO_INICIAL } from '../../lib/todoenvio'
 
 export const T = 'todoenvio'
 export const BASE = '/todoenvio'
@@ -11,21 +12,18 @@ export const DOMINIO = 'https://www.todoenvio.es'
 
 export const useTienda = () => useSim((s) => s.tiendas[T])
 
-// Categorías del menú «Explorar» (cualquier categoría muestra los mismos 10 productos)
+// Categorías reales de la tienda: cada una muestra solo sus productos
 export const CATEGORIAS = [
-  { nombre: 'Ofertas y ahorros', img: 'img/productos/p04/1.jpg', subs: ['Ofertas del día', 'Outlet', 'Cupones', 'Liquidación de temporada'] },
-  { nombre: 'Alimentación y bebidas', img: 'img/productos/p08/1.jpg', subs: ['Aceites y vinagres', 'Café e infusiones', 'Despensa', 'Bebidas'] },
-  { nombre: 'Droguería y cuidado personal', img: 'img/productos/p09/2.jpg', subs: ['Cuidado del cabello', 'Higiene', 'Afeitado', 'Limpieza del hogar'] },
-  { nombre: 'Salud y bienestar', img: 'img/productos/p09/1.jpg', subs: ['Tensiómetros', 'Ortopedia', 'Vitaminas', 'Ayudas para la movilidad'] },
-  { nombre: 'Moda y belleza', img: 'img/productos/p03/1.jpg', subs: ['Ropa de hombre', 'Ropa de mujer', 'Zapatos', 'Belleza'] },
-  { nombre: 'Hogar y cocina', img: 'img/productos/p10/1.jpg', subs: ['Pequeño electrodoméstico', 'Textil hogar', 'Menaje', 'Decoración'] },
-  { nombre: 'Dispositivos y electrónica', img: 'img/productos/p01/1.jpg', subs: ['Móviles', 'Auriculares', 'Televisores', 'Tabletas'] },
-  { nombre: 'Informática', img: 'img/productos/p02/1.jpg', subs: ['Portátiles', 'Impresoras', 'Accesorios', 'Tinta y papel'] },
-  { nombre: 'Libros', img: 'img/productos/p06/1.jpg', subs: ['Novela', 'Letra grande', 'Cocina', 'Historia'] },
-  { nombre: 'Deportes y aire libre', img: 'img/productos/p07/1.jpg', subs: ['Calzado deportivo', 'Senderismo', 'Natación', 'Bicicletas'] },
-  { nombre: 'Bricolaje y jardín', img: 'img/productos/p05/2.jpg', subs: ['Herramientas', 'Jardín', 'Iluminación', 'Pintura'] },
-  { nombre: 'Juguetes y juegos', img: 'img/productos/p06/4.jpg', subs: ['Juegos de mesa', 'Puzles', 'Para nietos', 'Manualidades'] },
-  { nombre: 'Mascotas', img: 'img/productos/p10/2.jpg', subs: ['Perros', 'Gatos', 'Pájaros', 'Peces'] },
+  { nombre: 'Ofertas y ahorros', img: 'img/productos/p04/1.jpg', subs: ['Ofertas del día'] },
+  { nombre: 'Electrónica', img: 'img/productos/p01/1.jpg', subs: ['Auriculares', 'Móviles', 'Radios'] },
+  { nombre: 'Hogar y cocina', img: 'img/productos/p10/1.jpg', subs: ['Freidoras', 'Cafeteras', 'Mantas'] },
+  { nombre: 'Moda', img: 'img/productos/p14/1.jpg', subs: ['Camisetas', 'Rebecas'] },
+  { nombre: 'Salud', img: 'img/productos/p18/1.jpg', subs: ['Tensiómetros', 'Pastilleros'] },
+  { nombre: 'Alimentación', img: 'img/productos/p17/1.jpg', subs: ['Aceite', 'Miel'] },
+  { nombre: 'Libros', img: 'img/productos/p15/1.jpg', subs: ['Novela', 'Recetarios'] },
+  { nombre: 'Deportes', img: 'img/productos/p16/1.jpg', subs: ['Zapatillas', 'Bicicletas'] },
+  { nombre: 'Bricolaje y jardín', img: 'img/productos/p12/1.jpg', subs: ['Taladros', 'Regaderas'] },
+  { nombre: 'Juguetes y juegos', img: 'img/productos/p13/1.jpg', subs: ['Ajedrez', 'Dominó'] },
 ]
 
 export const rutaCategoria = (nombre) => `${BASE}/buscar?k=${encodeURIComponent(nombre)}`
@@ -160,9 +158,31 @@ export function MiniProducto({ p, ancho = 'w-40' }) {
   )
 }
 
+// Franja del simulador (no es parte de la tienda): enseña el saldo de prácticas y da acceso al correo simulado
+export function BarraPracticas() {
+  const t = useTienda()
+  if (!t.usuario) return null
+  return (
+    <div className="flex items-center justify-between gap-2 bg-indigo-100 px-3 py-1 font-sans text-[0.98rem] text-indigo-950">
+      {t.saldo === null ? (
+        <Link to={`${BASE}/cartera/anadir`} className="flex min-h-10 items-center gap-1.5 font-semibold underline">
+          <GraduationCap size={18} aria-hidden /> Añade una tarjeta y recibe {euros(SALDO_INICIAL)} para practicar
+        </Link>
+      ) : (
+        <Link to={`${BASE}/cartera`} className="flex min-h-10 items-center gap-1.5" data-nota="saldo">
+          <Wallet size={18} aria-hidden /> Saldo de prácticas: <b>{euros(t.saldo)}</b>
+        </Link>
+      )}
+      <Link to={`${BASE}/correo`} className="flex min-h-10 shrink-0 items-center gap-1.5 font-semibold underline">
+        <Mail size={18} aria-hidden /> Mi correo
+      </Link>
+    </div>
+  )
+}
+
 // Cabecera sencilla para identificación y tramitación del pedido
 export function CabeceraCheckout({ titulo, paso }) {
-  const PASOS = ['Dirección', 'Entrega', 'Pago', 'Revisar']
+  const PASOS = ['Dirección', 'Pago', 'Revisar']
   return (
     <header className="border-b border-slate-300 bg-gradient-to-b from-white to-slate-100 px-4 py-3">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-3">

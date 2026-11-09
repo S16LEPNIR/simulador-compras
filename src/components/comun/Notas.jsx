@@ -9,7 +9,7 @@ const AJ = { segundosVisible: 14, segundosEntreNotasAleatorias: 75, segundosMini
 const NOTAS = Object.fromEntries(notasData.notas.map((n) => [n.id, n]))
 const ALEATORIAS = notasData.notas.filter((n) => n.aleatoria)
 
-const Ctx = createContext({ mostrar: () => {}, leer: () => {} })
+const Ctx = createContext({ mostrar: () => {}, leer: () => {}, cerrar: () => {} })
 export const useNotas = () => useContext(Ctx)
 
 // Muestra una nota la primera vez que se entra en una pantalla (tras un pequeño retraso para que la página se dibuje)
@@ -142,14 +142,14 @@ export function NotasProvider({ children }) {
   const leer = useCallback((texto) => useSim.getState().voz && hablar(texto), [])
 
   return (
-    <Ctx.Provider value={{ mostrar, leer }}>
+    <Ctx.Provider value={{ mostrar, leer, cerrar }}>
       {children}
       {actual && (
         <div
           key={actual.clave}
           role="status"
           aria-live="polite"
-          className="nota-entrada fixed z-[70] left-1/2 -translate-x-1/2 bottom-[5.5rem] md:bottom-6 md:left-auto md:right-6 md:translate-x-0 w-[min(94vw,440px)] rounded-2xl bg-white shadow-2xl border-2 border-violet-600 overflow-hidden font-sans"
+          className="nota-entrada nota-tarjeta fixed z-[70] left-1/2 -translate-x-1/2 bottom-[5.5rem] md:bottom-6 md:left-auto md:right-6 md:translate-x-0 w-[min(94vw,440px)] rounded-2xl bg-white shadow-2xl border-2 border-violet-600 overflow-hidden font-sans"
         >
           <div className="flex items-start gap-3 p-4 pb-3">
             <div className="shrink-0 rounded-full bg-violet-100 p-2 text-violet-700">

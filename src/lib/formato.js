@@ -1,4 +1,5 @@
 import productos from '../data/productos.json'
+import productosExtraTE from '../data/productos-todoenvio.json'
 
 const fmtEuros = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', minimumFractionDigits: 2 })
 
@@ -10,7 +11,9 @@ export function partesPrecio(n) {
   return { entero, cent }
 }
 
-export const producto = (id) => productos.find((p) => p.id === id)
+// Galerías Olmo usa los 10 productos comunes; Todoenvío, los 20
+export const productosTE = [...productos, ...productosExtraTE]
+export const producto = (id) => productosTE.find((p) => p.id === id)
 export { productos }
 
 // Precio de un producto según las opciones elegidas (algunas opciones suman un extra)

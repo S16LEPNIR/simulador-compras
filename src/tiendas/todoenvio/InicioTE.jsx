@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Pause, Play } from 'lucide-react'
 import { useUrl, Carrusel } from '../../components/comun/Simulador'
 import { useNota, useNotas } from '../../components/comun/Notas'
-import { descuento, euros, productos, producto } from '../../lib/formato'
+import { descuento, euros, productosTE, producto } from '../../lib/formato'
 import { BASE, CATEGORIAS, DOMINIO, MiniProducto, Precio, rutaCategoria } from './comun'
 
 function CuentaAtras() {
@@ -42,6 +42,13 @@ const SLIDES = [
     texto: 'Ediciones en letra grande, envío gratis',
     img: 'img/productos/p06/1.jpg',
     to: rutaCategoria('Libros'),
+  },
+  {
+    fondo: 'from-[#3d5a2a] to-[#6f9a3f]',
+    titulo: 'Muévete sin esfuerzo',
+    texto: 'Bicicleta eléctrica de paseo con cuadro bajo',
+    img: 'img/productos/p16/1.jpg',
+    to: `${BASE}/producto/p16`,
   },
 ]
 
@@ -115,7 +122,7 @@ export default function InicioTE() {
   useUrl(`${DOMINIO}/`)
   useNota('https-candado')
   useNota('buscador', true, 1200)
-  const ofertas = productos.filter((p) => descuento(p) > 0)
+  const ofertas = productosTE.filter((p) => descuento(p) > 0)
 
   return (
     <div className="pb-4">
@@ -185,9 +192,18 @@ export default function InicioTE() {
       </div>
 
       <section className="mt-3 bg-white p-4 md:mx-3 md:rounded-lg">
-        <h2 className="text-xl font-extrabold">Los más vendidos en Hogar y cocina</h2>
+        <h2 className="text-xl font-extrabold">Los más vendidos</h2>
         <Carrusel className="mt-3">
-          {['p04', 'p05', 'p10', 'p08', 'p09'].map((id) => (
+          {['p17', 'p18', 'p20', 'p13', 'p11', 'p14', 'p09'].map((id) => (
+            <MiniProducto key={id} p={producto(id)} />
+          ))}
+        </Carrusel>
+      </section>
+
+      <section className="mt-3 bg-white p-4 md:mx-3 md:rounded-lg">
+        <h2 className="text-xl font-extrabold">Para tu casa y tu jardín</h2>
+        <Carrusel className="mt-3">
+          {['p04', 'p05', 'p10', 'p12', 'p19'].map((id) => (
             <MiniProducto key={id} p={producto(id)} />
           ))}
         </Carrusel>
@@ -196,7 +212,7 @@ export default function InicioTE() {
       <section className="mt-3 bg-white p-4 md:mx-3 md:rounded-lg">
         <h2 className="text-xl font-extrabold">Inspirado en tus intereses</h2>
         <Carrusel className="mt-3">
-          {['p06', 'p01', 'p07', 'p03', 'p02'].map((id) => (
+          {['p06', 'p15', 'p01', 'p07', 'p16', 'p03', 'p02', 'p08'].map((id) => (
             <MiniProducto key={id} p={producto(id)} />
           ))}
         </Carrusel>

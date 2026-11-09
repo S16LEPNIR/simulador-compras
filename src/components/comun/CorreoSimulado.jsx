@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Inbox, Mail, Printer, ShieldAlert, Star, TriangleAlert } from 'lucide-react'
 import { Modal, useAvisoSimulador, useUrl } from './Simulador'
 import { useNota, useNotas } from './Notas'
 import { useSim } from '../../store/useSim'
 import { euros, fechaCompleta, fechaLarga, hora, ivaIncluido, textoOpciones } from '../../lib/formato'
+import { correosPedidoTE, nombreMetodo, numeroSeguimiento } from '../../lib/todoenvio'
 import { LogoGalerias, LogoTodoenvio } from './Logos'
 
 const TIENDAS = {
@@ -121,8 +122,13 @@ function Justificante({ tienda, pedido }) {
           <p className="text-right text-sm text-slate-600">IVA incluido ({euros(ivaIncluido(pedido.total))})</p>
         </dl>
         <p>
-          <b>Forma de pago:</b> tarjeta terminada en {pedido.pago.ultimos4}
+          <b>Forma de pago:</b> {tienda === 'todoenvio' ? nombreMetodo(pedido.pago) : `tarjeta terminada en ${pedido.pago.ultimos4}`}
         </p>
+        {tienda === 'todoenvio' && (
+          <Link to={`/todoenvio/seguimiento/${pedido.id}`} className={`flex min-h-12 items-center justify-center rounded-full px-5 font-bold ${c.boton}`}>
+            Seguir el paquete
+          </Link>
+        )}
         <Link to={c.pedidos} className={`flex min-h-12 items-center justify-center rounded-full px-5 font-bold ${c.boton}`}>
           {c.textoPedidos}
         </Link>
@@ -130,6 +136,50 @@ function Justificante({ tienda, pedido }) {
           Tienes 14 días naturales desde la entrega para desistir de la compra. Conserva este correo como justificante. {c.nombre} nunca te pedirá tus
           contraseñas ni los datos de tu tarjeta por correo electrónico. (Mensaje ficticio generado por el simulador).
         </p>
+      </div>
+    </article>
+  )
+}
+
+// Correos de Todoenvío posteriores a la compra: envío, reparto, entrega, cancelación y devolución
+function CorreoEventoTE({ m }) {
+  const p = m.pedido
+  const CUERPO = {
+    enviado: ['Tu paquete está en camino', 'Te avisaremos cuando salga a reparto.'],
+    reparto: ['Tu paquete llega hoy', 'Ya está en la furgoneta de reparto. Puedes ver por dónde va en el mapa de seguimiento.'],
+    entregado: ['Tu paquete se ha entregado', 'Si algo no te convence, tienes 14 días naturales para devolverlo.'],
+    cancelado: ['Se ha cancelado tu pedido', m.datos ? `Productos cancelados: ${m.datos.titulos?.join(', ')}. Reembolso: ${euros(m.datos.importe)}.` : ''],
+    devolucion: ['Hemos recibido tu solicitud de devolución', m.datos ? `Productos: ${m.datos.titulos?.join(', ')}. Tu reembolso de ${euros(m.datos.importe)} se procesará cuando recibamos el producto.` : ''],
+    reembolso: ['Tu reembolso se ha emitido', m.datos ? `Te hemos devuelto ${euros(m.datos.importe)}. En una compra real puede tardar unos días en aparecer en tu banco.` : ''],
+    cuenta: [m.asunto, m.texto],
+  }[m.tipo]
+  const verEnvio = ['enviado', 'reparto'].includes(m.tipo)
+  return (
+    <article className="overflow-hidden rounded-xl border border-slate-300 bg-white">
+      <div className="flex items-center justify-between bg-gradient-to-b from-[#f8d9b0] to-[#efbd84] px-5 py-4">
+        <LogoTodoenvio alto={30} />
+      </div>
+      <div className="space-y-3 p-5 text-[1.02rem] leading-relaxed">
+        <h2 className="text-xl font-extrabold">{CUERPO[0]}</h2>
+        <p>{CUERPO[1]}</p>
+        {p && (
+          <>
+            <p><b>Pedido n.º:</b> {p.id}</p>
+            {verEnvio && <p><b>Número de seguimiento:</b> {numeroSeguimiento(p.id)}</p>}
+            <ul className="space-y-2">
+              {p.lineas.map((l, i) => (
+                <li key={i} className="flex items-center gap-3">
+                  <img src={l.imagen} alt="" className="h-14 w-14 rounded bg-[#f7f7f7] object-contain p-1" />
+                  <span>{l.titulo}</span>
+                </li>
+              ))}
+            </ul>
+            <Link to={verEnvio ? `/todoenvio/seguimiento/${p.id}` : `/todoenvio/pedidos/${p.id}`} className="flex min-h-12 items-center justify-center rounded-full border border-[#f2c200] bg-[#ffd814] px-5 font-bold text-[#0f1111]">
+              {verEnvio ? 'Seguir el paquete' : 'Ver el pedido'}
+            </Link>
+          </>
+        )}
+        <p className="border-t border-slate-200 pt-3 text-sm text-slate-600">Todoenvío nunca te pedirá tus contraseñas ni los datos de tu tarjeta por correo electrónico. (Mensaje ficticio generado por el simulador).</p>
       </div>
     </article>
   )
@@ -190,15 +240,31 @@ export default function CorreoSimulado({ tienda }) {
   const navigate = useNavigate()
   const avisar = useAvisoSimulador()
   const pedidos = useSim((s) => s.tiendas[tienda].pedidos)
+  const usuario = useSim((s) => s.tiendas[tienda].usuario)
+  const correosCuenta = useSim((s) => s.tiendas[tienda].correosCuenta)
+  const [, refrescar] = useState(0)
+  useEffect(() => {
+    const i = setInterval(() => refrescar((x) => x + 1), 5000)
+    return () => clearInterval(i)
+  }, [])
   const c = TIENDAS[tienda]
   const pedidoAbierto = pedidos.find((p) => p.id === id)
-  const email = pedidos[0]?.email || 'tu-correo@correo-ficticio.es'
-  useUrl(`https://www.correo-ficticio.es/bandeja-de-entrada${id ? `/mensaje/${id === 'falso' ? '81723' : id.replace(/\D/g, '').slice(-5)}` : ''}`)
+  const email = usuario?.email || pedidos[0]?.email || 'tu-correo@correo-ficticio.es'
+  useUrl(`https://www.correo-ficticio.es/bandeja-de-entrada${id ? `/mensaje/${id === 'falso' ? '81723' : id.replace(/\D/g, '').slice(-5) || '10001'}` : ''}`)
   useNota('correos-falsos', true, 1500)
   const base = `/${tienda}/correo`
 
+  const extraTE =
+    tienda === 'todoenvio'
+      ? [
+          ...pedidos.flatMap((p) => correosPedidoTE(p)).map((m) => ({ ...m, remitente: 'Todoenvío <envios@todoenvio.es>' })),
+          ...correosCuenta.map((m) => ({ ...m, tipo: 'cuenta', fecha: new Date(m.fecha), remitente: 'Todoenvío <cuenta@todoenvio.es>' })),
+        ]
+      : []
+
   const mensajes = [
     ...pedidos.map((p) => ({ id: p.id, remitente: c.remitente, asunto: c.asunto(p), fecha: new Date(p.creado), resumen: `Gracias por tu pedido. Total: ${euros(p.total)}` })),
+    ...extraTE,
     { ...FALSO, fecha: new Date(Date.now() - 3600 * 1000 * 5), resumen: 'Pague las tasas pendientes en 24 horas o perderá su paquete...' },
   ].sort((a, b) => b.fecha - a.fecha)
   const abierto = id ? mensajes.find((m) => m.id === id) : null
@@ -261,8 +327,8 @@ export default function CorreoSimulado({ tienda }) {
                 </p>
               )}
             </div>
-            {id === 'falso' ? <CorreoFalso /> : <Justificante tienda={tienda} pedido={pedidoAbierto} />}
-            {id !== 'falso' && (
+            {id === 'falso' ? <CorreoFalso /> : abierto.tipo ? <CorreoEventoTE m={abierto} /> : <Justificante tienda={tienda} pedido={pedidoAbierto} />}
+            {id !== 'falso' && !abierto.tipo && (
               <button
                 onClick={() => avisar('En tu correo real puedes guardar este mensaje en una carpeta, imprimirlo o descargarlo en PDF.')}
                 className="mt-3 flex min-h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-slate-400 bg-white font-semibold"

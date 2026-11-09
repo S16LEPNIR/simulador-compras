@@ -15,12 +15,17 @@ Si cambias textos o productos, vuelve a generarlo con `npm run archivo`.
 
 ## Qué incluye
 
+- **Todoenvío** tiene 20 productos en 9 categorías, con búsqueda, filtros y orden que funcionan de verdad. **Galerías Olmo** mantiene sus 10 productos.
+- **Alta completa en Todoenvío**: correo, crear cuenta, código de verificación y método de pago (tarjeta, Bizum o cuenta bancaria). Vale cualquier dato inventado; solo se guardan las 4 últimas cifras, nunca el número completo ni el CVV.
+- **500 € de saldo ficticio** al guardar el primer método de pago. Cada compra lo descuenta, y si no llega el pago se rechaza. Cancelaciones y devoluciones lo reintegran. Para practicar hay una tarjeta regalo con el código `REGALO25`.
+- **Seguimiento con mapa** como en la aplicación móvil: la casa del comprador y la furgoneta que se acerca parada a parada. En ordenador se ve dentro de un teléfono. Un pedido tarda 12 minutos en llegar: 6 en el almacén (mientras se puede cancelar), 2 enviado y 4 en reparto. El botón «Simular» lo adelanta.
+- **Gestión de pedidos**: cancelar productos sueltos o el pedido entero, devoluciones con código QR, Mi cartera con transacciones, Mis direcciones, «Comprar ya» con hoja rápida, «Guardar para más tarde», avisos en pantalla y correos de cada etapa.
 - 10 productos compartidos por las dos tiendas, con galería, variantes (color, talla, capacidad), ficha técnica, 8-12 opiniones y preguntas de clientes.
 - Flujo completo de compra, con avisos amables si falta un dato y el botón **«Rellenar con datos de ejemplo»** en cada formulario.
 - Barra de navegador simulada con candado y dirección web que cambia en cada pantalla (en Galerías Olmo cambia de dominio al pagar, como en la realidad).
 - **Consejos didácticos** con voz (español de España, velocidad 0,9) que resaltan la parte de la pantalla de la que hablan. Se pueden repetir o silenciar.
 - Recordatorios de «esto es un simulador» al crear la cuenta, en la dirección, en el pago y en la confirmación.
-- Ventana de pedido realizado, **correo simulado** con el justificante (y un correo fraudulento de ejemplo para aprender a detectarlo) y seguimiento del pedido (Pedido realizado → Preparando → Enviado → En reparto → Entregado). El pedido avanza solo un paso cada 2 minutos o con el botón «Simular avance del pedido».
+- Ventana de pedido realizado, **correo simulado** con el justificante (y un correo fraudulento de ejemplo para aprender a detectarlo) y seguimiento del pedido (Pedido realizado → Preparando → Enviado → En reparto → Entregado). En Galerías Olmo el pedido avanza solo un paso cada 2 minutos o con el botón «Simular avance del pedido».
 - Botón **«Reiniciar»** (arriba a la derecha) para dejarlo limpio entre alumnos.
 
 ## Editar los textos
@@ -28,7 +33,7 @@ Si cambias textos o productos, vuelve a generarlo con `npm run archivo`.
 | Qué | Archivo |
 |---|---|
 | Consejos con voz, recordatorio y ajustes de la voz (velocidad, segundos visibles, frecuencia de consejos al azar) | `src/data/notas.json` |
-| Productos, precios, opiniones y preguntas | `src/data/productos.json` |
+| Productos, precios, opiniones y preguntas | `src/data/productos.json` y, solo para Todoenvío, `src/data/productos-todoenvio.json` |
 | Datos del botón «Rellenar con datos de ejemplo» (siempre ficticios) | `src/data/ejemplo.json` |
 
 En `notas.json` no cambies el campo `id` de cada consejo: el programa lo usa para saber cuándo mostrarlo. Sí puedes cambiar `texto` libremente.
